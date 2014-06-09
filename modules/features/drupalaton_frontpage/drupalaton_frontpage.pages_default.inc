@@ -166,6 +166,37 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $display->content['new-727805bc-f60c-4e62-a221-7c54fcbd6ed2'] = $pane;
     $display->panels['bottom'][0] = 'new-727805bc-f60c-4e62-a221-7c54fcbd6ed2';
     $pane = new stdClass();
+    $pane->pid = 'new-cb5bea3b-83ad-4d24-a77a-bd7296595cc6';
+    $pane->panel = 'bottom';
+    $pane->type = 'node';
+    $pane->subtype = 'node';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'nid' => '4',
+      'links' => 0,
+      'leave_node_title' => 0,
+      'identifier' => '',
+      'build_mode' => 'teaser',
+      'link_node_title' => 0,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'container_12 sponsor_packages',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'cb5bea3b-83ad-4d24-a77a-bd7296595cc6';
+    $display->content['new-cb5bea3b-83ad-4d24-a77a-bd7296595cc6'] = $pane;
+    $display->panels['bottom'][1] = 'new-cb5bea3b-83ad-4d24-a77a-bd7296595cc6';
+    $pane = new stdClass();
     $pane->pid = 'new-43948b8c-2486-4f3a-9a4f-d23878fdabae';
     $pane->panel = 'bottom';
     $pane->type = 'node';
@@ -191,11 +222,11 @@ function drupalaton_frontpage_default_page_manager_pages() {
       'css_class' => 'container_12',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '43948b8c-2486-4f3a-9a4f-d23878fdabae';
     $display->content['new-43948b8c-2486-4f3a-9a4f-d23878fdabae'] = $pane;
-    $display->panels['bottom'][1] = 'new-43948b8c-2486-4f3a-9a4f-d23878fdabae';
+    $display->panels['bottom'][2] = 'new-43948b8c-2486-4f3a-9a4f-d23878fdabae';
     $pane = new stdClass();
     $pane->pid = 'new-7787364b-d64c-45e0-a547-648b5ac359e8';
     $pane->panel = 'bottom';
@@ -222,11 +253,11 @@ function drupalaton_frontpage_default_page_manager_pages() {
       'css_class' => 'container_12',
     );
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = '7787364b-d64c-45e0-a547-648b5ac359e8';
     $display->content['new-7787364b-d64c-45e0-a547-648b5ac359e8'] = $pane;
-    $display->panels['bottom'][2] = 'new-7787364b-d64c-45e0-a547-648b5ac359e8';
+    $display->panels['bottom'][3] = 'new-7787364b-d64c-45e0-a547-648b5ac359e8';
     $pane = new stdClass();
     $pane->pid = 'new-f59b39e2-1b17-46f6-b932-3269bae50996';
     $pane->panel = 'bottom';
@@ -253,11 +284,11 @@ function drupalaton_frontpage_default_page_manager_pages() {
       'css_class' => 'contactmin container_12',
     );
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = 'f59b39e2-1b17-46f6-b932-3269bae50996';
     $display->content['new-f59b39e2-1b17-46f6-b932-3269bae50996'] = $pane;
-    $display->panels['bottom'][3] = 'new-f59b39e2-1b17-46f6-b932-3269bae50996';
+    $display->panels['bottom'][4] = 'new-f59b39e2-1b17-46f6-b932-3269bae50996';
     $pane = new stdClass();
     $pane->pid = 'new-949be1fe-2e50-4321-98ba-bea2753edb0d';
     $pane->panel = 'center';

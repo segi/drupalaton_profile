@@ -665,6 +665,9 @@ div.twitter {
     }
   }
 }
+div.contactmin {
+  background-color: $sectiontitle;
+}
 div.newsletter {
   background-color: $menuitemcolor;
   padding: 60px 0;
@@ -861,8 +864,16 @@ table.program {
     &:first-child {
       width: 15%;
     }
-  }
-  
+  }  
+}
+.sponsor_packages {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  table tbody tr td {
+    background-color: transparent;
+    color: $tabletd;
+  } 
 }
 
 /**
@@ -907,6 +918,9 @@ table.program {
         }
       }
     }
+  }
+  .sponsors {
+    padding-bottom: 25px;
   }
 }
 // sponsor page
