@@ -55,6 +55,8 @@ projects[entity][version] = 1.5
 projects[entity][subdir] = contrib
 projects[profile2][version] = 1.3
 projects[profile2][subdir] = contrib
+projects[link][version] = 1.2
+projects[link][subdir] = contrib
 
 ; User interface
 projects[ckeditor][type] = "module"
