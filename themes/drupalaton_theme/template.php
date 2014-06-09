@@ -49,3 +49,11 @@ function live_twoday(){
   </div>';	
   return $html;
 }
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function drupalaton_theme_preprocess_page(&$variables) {
+  $variables['sponsor_diamond'] = views_embed_view('sponsors', 'block_1');
+  $variables['sponsor_gold'] = views_embed_view('sponsors', 'block_2');
+}

@@ -116,6 +116,58 @@ function drupalaton_sponsor_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+
+  /* Display: Diamond */
+  $handler = $view->new_display('block', 'Diamond', 'block_1');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'sponsor' => 'sponsor',
+  );
+  /* Filter criterion: Content: Category (field_sponsor_category) */
+  $handler->display->display_options['filters']['field_sponsor_category_value']['id'] = 'field_sponsor_category_value';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['table'] = 'field_data_field_sponsor_category';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['field'] = 'field_sponsor_category_value';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['value'] = array(
+    'diamond' => 'diamond',
+  );
+
+  /* Display: Gold */
+  $handler = $view->new_display('block', 'Gold', 'block_2');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'sponsor' => 'sponsor',
+  );
+  /* Filter criterion: Content: Category (field_sponsor_category) */
+  $handler->display->display_options['filters']['field_sponsor_category_value']['id'] = 'field_sponsor_category_value';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['table'] = 'field_data_field_sponsor_category';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['field'] = 'field_sponsor_category_value';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['value'] = array(
+    'gold' => 'gold',
+  );
   $export['sponsors'] = $view;
 
   return $export;

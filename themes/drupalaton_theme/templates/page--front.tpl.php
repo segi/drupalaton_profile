@@ -61,6 +61,19 @@
   </div></div> <!-- /#main, /#main-wrapper -->
 
 </div>
+<?php if ($sponsor_diamond || $sponsor_gold): ?>
+  <div class="sponsors">
+    <div class="container_12 panel-pane">
+      <h2 class="pane-title">Sponsors</h2>
+      <?php if ($sponsor_diamond): ?>
+        <?php print $sponsor_diamond; ?>
+      <?php endif; ?>
+      <?php if ($sponsor_gold): ?>
+        <?php print $sponsor_gold; ?>
+      <?php endif; ?>
+    </div>
+  </div>
+<?php endif; ?>
 <div class="newsletter" id="newsletter">
   <div class="container_12">
     <!-- Begin MailChimp Signup Form -->
