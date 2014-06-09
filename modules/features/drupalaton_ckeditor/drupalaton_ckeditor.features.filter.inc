@@ -30,7 +30,9 @@ function drupalaton_ckeditor_filter_default_formats() {
       'codefilter' => array(
         'weight' => -48,
         'status' => 1,
-        'settings' => array(),
+        'settings' => array(
+          'nowrap_expand' => FALSE,
+        ),
       ),
       'filter_autop' => array(
         'weight' => -47,

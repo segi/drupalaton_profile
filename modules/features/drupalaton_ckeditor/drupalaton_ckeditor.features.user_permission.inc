@@ -15,6 +15,7 @@ function drupalaton_ckeditor_user_default_permissions() {
     'name' => 'use text format filtered_html',
     'roles' => array(
       'authenticated user' => 'authenticated user',
+      'texteditor' => 'texteditor',
     ),
     'module' => 'filter',
   );
