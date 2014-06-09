@@ -635,14 +635,15 @@ section {
     margin: 0;
     display: block;
     font-family: $oswald;
-    color: $sectiontitle;
+    color: #fff;
     text-transform: uppercase;
     line-height: 100%;
     font-size: $base-font-size * 5 + 2;
     font-weight: bold;
+    @include text-shadow(1px 1px 1px $sectiontitle);
 
     span a {
-      color: $menuitemcolor;
+      color: #fff;
     }
   }
 }
@@ -917,8 +918,12 @@ table.program {
       }
     }
   }
-  .sponsors {
-    padding-bottom: 25px;
+  .sponsors-bottom {
+    padding: 60px 0;
+  }
+  .contactmin {
+    background-color: lighten($sectiontitle, 40%);
+    padding: 60px 0;
   }
 }
 // sponsor page

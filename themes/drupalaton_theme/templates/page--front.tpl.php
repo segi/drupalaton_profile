@@ -62,7 +62,7 @@
 
 </div>
 <?php if ($sponsor_diamond || $sponsor_gold): ?>
-  <div class="sponsors">
+  <div class="sponsors-bottom">
     <div class="container_12 panel-pane">
       <h2 class="pane-title">Sponsors</h2>
       <?php if ($sponsor_diamond): ?>
@@ -74,6 +74,13 @@
     </div>
   </div>
 <?php endif; ?>
+<div class="contactmin" id="contactmin">
+  <div class="container_12">
+    <p>If you have any questions<br />
+    feel free to <a href="mailto:info@drupalaton.hu" title="Write to us!"> write to us</a>!<br />
+    <span><a href="mailto:info@drupalaton.hu">info@drupalaton.hu</a></span></p>
+  </div>
+</div>
 <div class="newsletter" id="newsletter">
   <div class="container_12">
     <!-- Begin MailChimp Signup Form -->
