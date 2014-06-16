@@ -22,7 +22,7 @@ function drupalaton_sessions_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Sessions';
+  $handler->display->display_options['title'] = 'Featured sessions';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -46,38 +46,6 @@ function drupalaton_sessions_views_default_views() {
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
-  /* Field: Content: Session title */
-  $handler->display->display_options['fields']['field_speaker_session_title']['id'] = 'field_speaker_session_title';
-  $handler->display->display_options['fields']['field_speaker_session_title']['table'] = 'field_data_field_speaker_session_title';
-  $handler->display->display_options['fields']['field_speaker_session_title']['field'] = 'field_speaker_session_title';
-  $handler->display->display_options['fields']['field_speaker_session_title']['label'] = '';
-  $handler->display->display_options['fields']['field_speaker_session_title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_speaker_session_title']['alter']['text'] = '<div id="speaker-[nid]">[field_speaker_session_title]</div>';
-  $handler->display->display_options['fields']['field_speaker_session_title']['element_label_colon'] = FALSE;
-  /* Field: Content: Session type */
-  $handler->display->display_options['fields']['field_speaker_session_type']['id'] = 'field_speaker_session_type';
-  $handler->display->display_options['fields']['field_speaker_session_type']['table'] = 'field_data_field_speaker_session_type';
-  $handler->display->display_options['fields']['field_speaker_session_type']['field'] = 'field_speaker_session_type';
-  $handler->display->display_options['fields']['field_speaker_session_type']['label'] = '';
-  $handler->display->display_options['fields']['field_speaker_session_type']['element_label_colon'] = FALSE;
-  /* Field: Content: Session summary */
-  $handler->display->display_options['fields']['field_speaker_session_summary']['id'] = 'field_speaker_session_summary';
-  $handler->display->display_options['fields']['field_speaker_session_summary']['table'] = 'field_data_field_speaker_session_summary';
-  $handler->display->display_options['fields']['field_speaker_session_summary']['field'] = 'field_speaker_session_summary';
-  $handler->display->display_options['fields']['field_speaker_session_summary']['label'] = '';
-  $handler->display->display_options['fields']['field_speaker_session_summary']['element_label_colon'] = FALSE;
-  /* Field: Content: Photo */
-  $handler->display->display_options['fields']['field_speaker_photo']['id'] = 'field_speaker_photo';
-  $handler->display->display_options['fields']['field_speaker_photo']['table'] = 'field_data_field_speaker_photo';
-  $handler->display->display_options['fields']['field_speaker_photo']['field'] = 'field_speaker_photo';
-  $handler->display->display_options['fields']['field_speaker_photo']['label'] = '';
-  $handler->display->display_options['fields']['field_speaker_photo']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_speaker_photo']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_speaker_photo']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_speaker_photo']['settings'] = array(
-    'image_style' => 'keynote_speaker',
-    'image_link' => '',
-  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -85,13 +53,16 @@ function drupalaton_sessions_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_class'] = 'views-field-field-speaker-session-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Job title */
-  $handler->display->display_options['fields']['field_speaker_job_title']['id'] = 'field_speaker_job_title';
-  $handler->display->display_options['fields']['field_speaker_job_title']['table'] = 'field_data_field_speaker_job_title';
-  $handler->display->display_options['fields']['field_speaker_job_title']['field'] = 'field_speaker_job_title';
-  $handler->display->display_options['fields']['field_speaker_job_title']['label'] = '';
-  $handler->display->display_options['fields']['field_speaker_job_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['field_session_type']['id'] = 'field_session_type';
+  $handler->display->display_options['fields']['field_session_type']['table'] = 'field_data_field_session_type';
+  $handler->display->display_options['fields']['field_session_type']['field'] = 'field_session_type';
+  $handler->display->display_options['fields']['field_session_type']['label'] = '';
+  $handler->display->display_options['fields']['field_session_type']['element_class'] = 'views-field-field-speaker-session-type';
+  $handler->display->display_options['fields']['field_session_type']['element_label_colon'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -115,7 +86,7 @@ function drupalaton_sessions_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'speaker' => 'speaker',
+    'session' => 'session',
   );
 
   /* Display: Block */
@@ -124,6 +95,33 @@ function drupalaton_sessions_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+
+  /* Display: Featured session */
+  $handler = $view->new_display('panel_pane', 'Featured session', 'featured_session');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'session' => 'session',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Nodequeue: Subqueue title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'nodequeue_subqueue';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['relationship'] = 'nodequeue_rel';
+  $handler->display->display_options['filters']['title']['value'] = 'Featured sessions';
+  $handler->display->display_options['filters']['title']['group'] = 1;
   $export['sessions'] = $view;
 
   return $export;
