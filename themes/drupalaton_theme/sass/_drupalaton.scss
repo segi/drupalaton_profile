@@ -473,7 +473,7 @@ body.front .sponsors {
 }
 // keynote
 .panels-flexible-row-2-main-row {
-  background-color: $sectiontitle;
+  //background-color: $sectiontitle;
   width: 100%;
   
   .keynote {
@@ -865,6 +865,11 @@ table.program {
     }
   }  
 }
+body.front .panel-flexible .panel-separator {
+  margin-top: 50px;
+  margin-bottom: 50px; 
+  height: 1px; 
+}
 .sponsor_packages {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1087,6 +1092,12 @@ body.page-sponsors{
     margin-bottom: 60px;
     border-bottom: 4px solid $tabletd;
     padding-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
   }
   .views-row-1 {
     margin-top: 50px;
