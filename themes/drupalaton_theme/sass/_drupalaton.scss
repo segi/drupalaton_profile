@@ -26,7 +26,7 @@ a {
 a.anchor {
   color: $sectionsubtitle;
 }
-p {
+p, .node * {
   font-size: $base-font-size + 8;
   line-height: 140%;
 }
@@ -408,6 +408,10 @@ body.not-front {
 body.page-node {
   .node {
     position: relative;
+    
+    .field-label {
+      margin: 0;
+    }
   }
   .field-name-field-sponsor-logo {
     float: right;
