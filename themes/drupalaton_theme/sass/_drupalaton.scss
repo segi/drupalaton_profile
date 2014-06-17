@@ -1205,6 +1205,15 @@ body.page-sponsors{
   }
 }
 
+img.img-left {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+img.img-right {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+
 // landscape ipad tablet
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
