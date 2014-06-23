@@ -1,0 +1,51 @@
+/**
+ * @file
+ * Formatting for large desktop.
+ */
+
+#nav {
+  width: $dekstopwidth;
+  margin: 0 auto;
+}
+.tab-content .content {
+  width: 960px;
+  margin: 0 auto;
+}
+ul.badges {
+  padding: 0;
+  margin: 0;
+  
+  li {
+    @include clearfix;
+    list-style: none;
+    border-bottom: 1px solid #CCC;
+    padding: 13px 0 25px 0;
+    margin: 13px 0 13px 0;
+    
+    &:last-child {
+      border-bottom: 0;
+    }
+    
+    img {
+      float: left;
+      margin-right: 50px;
+    }
+    .codeblock {
+      display: block;
+      float: left;
+      width: 75%;
+      
+      code {
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+.sponsors-bottom {
+  padding: 60px 0;
+}
+.contactmin {
+  background-color: lighten($sectiontitle, 40%);
+  padding: 60px 0;
+}

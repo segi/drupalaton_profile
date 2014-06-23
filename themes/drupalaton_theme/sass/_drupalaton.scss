@@ -404,80 +404,59 @@ body.not-front {
     color: $sectionsubtitle;
   }
 }
-// node page 
-body.page-node {
-  .node {
-    position: relative;
-    
-    .field-label {
-      margin: 0;
-    }
-  }
-  .field-name-field-sponsor-logo {
-    float: right;
-    margin-left: 25px;
-
-  }
-}
 .field-name-field-sponsor-web-page a {
   font-size: 22px;
 }
 
 // sponsors row in frontpage 
-body.front .sponsors {
+.sponsors {
   padding: 20px 0;
-  
+ 
+ .view-content div:first-child h3 {
+    margin-top: 20px;
+  }
+  .view-content {
+    position: relative;
+    margin-top: 20px;    
+  }
+}
+.view-sponsors {
+  .views-row {
+    float: left;
+    margin-right: 25px;
+  }
+  .sponsor-row {
+    @include clearfix;
+    margin-bottom: 10px;
+  }
   h3 {
     font-family: $oswald;
     font-size: $base-font-size *2;
     color: #000;
     font-weight: bold;
     margin: 0;
-    float: left;
-    margin: 17px 20px 0 0;
+    margin: 17px 0 20px 0;
   }
-  .views-row {
-    float: left;
-    margin-right: 40px;
+}
+
+// sponsor page
+body.page-sponsors{
+  .views-field-field-sponsor-logo {
+    float:right;
+    margin: 0 0 10px 10px;
   }
   .sponsor-row {
-    @include clearfix;
-    margin-bottom: 10px
-  }
-  .view-content div:first-child h3 {
-    margin-top: 20px;
-  }
-  .view-content {
-    position: relative;
-    margin-top: 20px;
+    border-bottom: 3px solid $tabletd;
+    padding-bottom: 10px;
     
-    .sponsor-row:nth-child(1){ 
-      
-      h3 {
-         margin-top: 31px;
-      }
-    }
-    .sponsor-row:nth-child(2) {
-      position: absolute;
-      top: 14px;
-      left: 290px;
-    }
-    .sponsor-row:nth-child(3) {
-      @include clearfix;
-      
-      h3 {
-        font-size: $base-font-size +5;
-        margin-right: 30px;
-      }
-    }
-    .sponsor-row:last-child {
-      margin-bottom: 0;
+    &:last-child {
+      border-bottom: 0;
     }
   }
 }
+
 // keynote
 .panels-flexible-row-2-main-row {
-  //background-color: $sectiontitle;
   width: 100%;
   
   .keynote {
@@ -563,6 +542,13 @@ body.page-node-edit {
     position: relative;
     margin-top: 0;
     left: 0;
+  }
+  .node {
+    position: relative;
+    
+    .field-label {
+      margin: 0;
+    }
   }
 }
 p.price {
@@ -884,206 +870,6 @@ body.front .panel-flexible .panel-separator {
   } 
 }
 
-/**
- * device fixes
- */
-@media all and (min-width: 960px) {
-  #nav {
-    width: $dekstopwidth;
-    margin: 0 auto;
-  }
-  .tab-content .content {
-    width: 960px;
-    margin: 0 auto;
-  }
-  ul.badges {
-    padding: 0;
-    margin: 0;
-    
-    li {
-      @include clearfix;
-      list-style: none;
-      border-bottom: 1px solid #CCC;
-      padding: 13px 0 25px 0;
-      margin: 13px 0 13px 0;
-      
-      &:last-child {
-        border-bottom: 0;
-      }
-      
-      img {
-        float: left;
-        margin-right: 50px;
-      }
-      .codeblock {
-        display: block;
-        float: left;
-        width: 75%;
-        
-        code {
-          font-size: 14px;
-          line-height: 140%;
-        }
-      }
-    }
-  }
-  .sponsors-bottom {
-    padding: 60px 0;
-  }
-  .contactmin {
-    background-color: lighten($sectiontitle, 40%);
-    padding: 60px 0;
-  }
-}
-// sponsor page
-body.page-sponsors{
-  h3 {
-    margin: 40px 0 0 0;
-    font-family: $oswald;
-    font-weight: 100;
-    font-size: $base-font-size * 2 + 6;
-    line-height: 100%;
-    text-transform: uppercase;
-    color: $sectionsubtitle;
-  }
-  .views-field-field-sponsor-logo {
-    float:right;
-    margin: 0 0 10px 10px;
-  }
-  .sponsor-row {
-    border-bottom: 3px solid $tabletd;
-    padding-bottom: 10px;
-    
-    &:last-child {
-      border-bottom: 0;
-    }
-    
-    .sor {
-      border-bottom: 1px solid $tabletd-35;
-      
-      &:last-child {
-        border-bottom: 0;
-      }
-    }
-  }
-}
-// big screen
-@media all and (min-width: 1340px) {
-
-}
-// normal screen
-@media all and (min-width: 1000px) and (max-width: 1339px) {
-
-}
-// tablet and small screen
-@media all and (min-width: 600px) and (max-width: 999px) {
-  section.keynote {
-    h2.section-title {
-      padding-left: 25px;
-    }
-    .user {
-      float: none;
-      padding-left: 25px;
-    }
-  }
-  #nav ul li {
-    margin: 0 5px;
-    
-    a {
-      font-size: $base-font-size;
-    }
-  }
-  .container_12 {
-    width: 100%;
-    
-    .wrapper {
-      padding: 0 40px;
-    }
-  }
-  body {
-    min-width: 600px;
-    max-width: 999px;
-  }
-  .hills {
-    width: 600px;
-  }
-  .logo-link .logo-link-inner {
-    width: 100%;
-    
-    a {
-      right: 90%;
-    }
-  }
-  .logo {
-    .logo-inner {
-      width: 100%;
-      padding: 0;
-      
-      img {
-        right: 10%;
-        position: relative;
-      }
-    }
-  }
-  .lake,
-  .landscape {
-    height:644px;
-  }
-  .info {
-    height: 285px;
-    
-    h1 {
-      width: 600px;
-      
-      span {
-        background-size: 100% auto;
-      }
-    }
-  }
-  .about .event-data {
-    background-size: 40% auto;
-  }
-  .sponsors .tab-button {
-    width: 90%;
-  }
-  .newsletter .container_12,
-  .twitter .container_12,
-  .social .container_12 {
-    padding: 0 40px;
-    max-width: 86%;
-  }
-  .contactmin p,
-  div.newsletter span,
-  div.twitter span,
-  div.social p {
-    font-size: $base-font-size * 4;
-  }
-  div.newsletter input.email {
-    width: 59%;
-  }
-  .tabs h2 a span {
-    display: none;
-  }
-  p.price {
-    display: block;
-  }
-  body.front {
-    .info h1 {
-      width: 90%;
-    }
-    .panels-flexible-row-last .container_12 {
-      padding: 0 40px;
-      width: 90%;
-    }
-  }
-  .about-buttons .tab-button {
-    width: 29%;
-  }
-  body.front .logo .logo-inner {
-    width: 80%;
-  }
-}
-
 // Sessions view in schedule page
 .view-sessions {
   * {
@@ -1217,290 +1003,31 @@ img.img-right {
   float: right;
   margin: 0 0 15px 15px;
 }
+.contactmin {
+  background-color: lighten($sectiontitle, 40%);
+  padding: 60px;
+}
 
-// landscape ipad tablet
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-
+@media all and (min-width: 960px) {
+  @import "_desktop.scss";
+}
+// tablet and small screen
+@media all and (min-width: 600px) and (max-width: 999px) {
+  @import "_tablet.scss";
 }
 // mobile device
 @media all and (max-width: 599px) {
-  body {
-    max-width: 599px;
-    min-width: 100px;
-  }
-  section.keynote {
-    h2.section-title {
-      padding-left: 15px;
-    }
-    .user {
-      float: none;
-      padding-left: 10px;
-    }
-  }
-  .container_12 {
-    width: 100%;
-    max-width: 599px;
-  }
-  #nav ul {
-    padding-left: 20px;
-    
-    li a {
-      color: #fff;
-    }
-  }
-  body.front {
-    .hills {
-      width: 100%;
-      background-position: -392px 0;    
-    }
-    .logo {
-      top: 196px;
-      right: 0;
-      position: relative;
-      text-align: left;
-    }
-    .landscape {
-      height: 492px;
-  
-      .hills {
-        width: 100%;
-        background-position: -392px 0;
-      }
-      .logo {
-        top: 196px;
-        right: 0;
-  
-        .logo-inner {
-          width: 100%;
-          max-width: 599px;
-          padding: 0;
-  
-          img {
-            margin: 0 30px 0 0;
-            width: 280px;
-          }
-        }
-      }
-      .info {
-        height: 262px;
-        margin-top: 0;
-  
-        h1 {
-          width: 100%;
-          max-width: 500px;
-  
-          span {
-            background-size: 89% auto;
-            background-position: 18px 0;
-            margin-left: 0;
-            width: 100%;
-          }
-        }
-      }
-      .lake {
-        height: 492px;
-      }
-      .logo-link-inner {
-        width: 100%;
-        max-width: 599px;
-  
-        a {
-          right: 17px;
-          top: 193px;
-        }
-      }
-    }
-    .sponsors {
-      .sponsor-row:nth-child(2) {
-        position: relative !important;
-        left: 0 !important;
-        top: 0 !important;
-      }
-      h3 {
-        float: none;
-      }
-      .views-row {
-        float: none;
-        margin: 10px 0;
-      }
-    }
-    
-  }
-  .clouds,
-  .boats {
-    display: none;
-  }
-
-
-  .tabs {
-    height: auto;
-
-    h2 {
-      float: left;
-      width: 30%;
-      margin: 0 0 0 2%;
-      
-      &.last {
-        margin-left: 0;
-      }
-      span {
-        display: none;
-      }
-      &.middle {
-        margin: 0 10px;
-      }
-      a {
-        padding: 5px;
-        font-size: $base-font-size;
-      }
-    }
-  }
-  .sponsors .tabs h2 a {
-    font-size: $base-font-size;
-  }
-  .content {
-    .wrapper {
-      padding: 0 20px;
-    }
-  }
-  body.front {
-    .panels-flexible-row-last .container_12 {
-      padding: 0 20px;
-      width: 90%;
-    }
-  }
-  .event-data {
-    background-image:none;
-  }
-
-  .twitter span,
-  .newsletter form {
-    padding: 0 20px;
-  }
-  div.twitter span,
-  div.newsletter span {
-    font-size: $base-font-size + 18;
-    line-height: 120%;
-  }
-  div.twitter {
-    span {
-
-    }
-  }
-  div.newsletter {
-    input.email {
-      float: none;
-      width: 80%;
-      margin: 20px 0 0 0;
-      text-align: center;
-    }
-    input.button {
-      width: 100%;
-      float: none;
-      margin: 20px 0 0 0;
-    }
-  }
-  .navigation {
-    height: auto;
-  }
-  h2.section-title,
-  .panel-pane h2.pane-title {
-    font-size: $base-font-size * 2;
-  }
-  .about .event-data {
-    padding-bottom: 180px;
-    background-size: 100% auto;
-    background-position: 0 bottom;
-  }
-  .contactmin {
-    p {
-      font-size: $base-font-size * 2 + 2;
-    }
-  }
-  .sponsors {
-    .tab-button {
-      width: 77%;
-    }
-  }
-  .boats {
-   .boat {
-     display: none;
-   }
-  }
-  .tab-content {
-    p.price {
-      display: block;
-    }
-  }
-  div.social {
-    img {
-      height: 28px;
-    }
-    p {
-      padding-left: 20px;
-      padding-right: 20px;
-      font-size: $base-font-size *2+4;
-      line-height: 120%;
-    }
-  }
-  .panels-flexible-row-2-main-row .keynote .speaker-name {
-    font-size: $base-font-size *2;
-  }
-  .rounded-corner .wrap-corner .r-edge {
-    padding: 5px 10px;
-    width: 95%;
-  }
-  .panels-flexible-row-2-main-row .keynote .user {
-    float: none;
-    width: 100%;
-    margin: 30px 0 0;
-  }
-  .panels-flexible-row-2-main-row .keynote .user .tab-button {
-    width: 100%;
-  }
-  .about-buttons .tab-button {
-    width: 100%;
-    float: none;
-    margin: 10px 0;
-    
-    &.center {
-      margin: 10px 0;
-    }
-  }
+  @import "_mobile.scss";
+}
+// Large desktop
+@media only screen and (min-width: 1300px) {
+  @import "_desktop_lg.scss";
 }
 @media all and (max-width: 1300px) {
   .hills {
     background-position: -320px 0;
   }
 }
-// iPhone 4, 4S Retina landscape
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  p {
-    font-size: 16px;
-    line-height: 140%;
-  }
-  .landscape {
-    height: 440px;
-    
-    .lake {
-      height: 440px;
-    }
-  }
-  .about-wrapper, .location, .sessionproposals {
-    margin-top: 40px;
-  }
-  .navigation #nav-toggle {
-    height: 30px;
-    background-size: 70% auto;
-    background-position: 60% center;
-  }
-  #nav {
-    ul li a {
-      font-size: 12px;
-    }
-  }
-}
-
 // Standing retina screen
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 600px){
   .landscape .info h1 span {
