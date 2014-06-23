@@ -14,6 +14,12 @@ projects[drupalaton][directory_name] = drupalaton_profile
 ; Contrib modules
 projects[admin_menu][subdir] = contrib
 projects[admin_menu][version] = 3.0-rc4
+projects[email][subdir] = contrib
+projects[email][version] = 1.3
+projects[entityform][subdir] = contrib
+projects[entityform][version] = 1.4
+projects[rules][subdir] = contrib
+projects[rules][version] = 2.7
 projects[features][subdir] = contrib
 projects[features][version] = 2.0
 projects[views][subdir] = contrib
