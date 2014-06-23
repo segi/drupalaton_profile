@@ -53,6 +53,7 @@ function drupalaton_sessions_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
+        'Workshop (3 hours)' => 'Workshop (3 hours)',
         'Workshop (90 minutes)' => 'Workshop (90 minutes)',
         'Session (40 minutes)' => 'Session (40 minutes)',
         'Session (20 minutes)' => 'Session (20 minutes)',
