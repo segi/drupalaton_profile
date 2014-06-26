@@ -1057,14 +1057,32 @@ img.img-right {
 .sponsor-diamond .badge {
   background-position: 0 0;
 }
-.sponsor-gold .badge {
-  background-position: 0 -200px;
+.sponsor-gold {
+  .badge {
+    background-position: 0 -200px;
+  }
+  div.tab-button {
+    margin-top: 51px;
+    
+    body.front & {
+      margin-top: 0;
+    }
+  }
 }
 .sponsor-silver .badge {
   background-position: 0 -400px;
 }
-.sponsor-bronze .badge {
-  background-position: 0 -600px;
+.sponsor-bronze {
+  .badge {
+    background-position: 0 -600px;
+  }
+  div.tab-button {
+    margin-top: 106px;
+
+    body.front & {
+      margin-top: 0;
+    }
+  }
 }
 .pack-name,
 .pack-price,
