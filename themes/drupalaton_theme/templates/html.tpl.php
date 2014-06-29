@@ -9,6 +9,16 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+  <![endif]-->
+  <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="<?php print $path_to_theme; ?>/css/ie.css" />
+    <script type="text/javascript" src="<?php print $path_to_theme; ?>/lib/respond/src/respond.js"></script>
+  <![endif]-->
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <?php print $scripts; ?>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

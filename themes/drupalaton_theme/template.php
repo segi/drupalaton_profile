@@ -51,6 +51,13 @@ function live_twoday(){
 }
 
 /**
+ * Implements hook_preprocess_html().
+ */
+function drupalaton_theme_preprocess_html(&$variables) {
+  $variables['path_to_theme'] = url(drupal_get_path('theme', 'drupalaton_theme', array('absolute' => TRUE)));
+}
+
+/**
  * Implements hook_preprocess_page().
  */
 function drupalaton_theme_preprocess_page(&$variables) {
