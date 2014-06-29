@@ -1477,21 +1477,22 @@ body.page-sponsors .sponsor-row:last-child {
   display: none;
 }
 
-/* line 462, ../sass/_drupalaton.scss */
-.panels-flexible-row-1-main-row {
+/* line 463, ../sass/_drupalaton.scss */
+.panels-flexible-row-1-main-row,
+.panels-flexible-row-new-main-row {
   width: 100%;
   background-color: #082637;
 }
 
-/* line 467, ../sass/_drupalaton.scss */
+/* line 468, ../sass/_drupalaton.scss */
 .keynote ul {
   list-style: none;
 }
-/* line 470, ../sass/_drupalaton.scss */
+/* line 471, ../sass/_drupalaton.scss */
 .keynote .pane-title {
   color: #fff;
 }
-/* line 473, ../sass/_drupalaton.scss */
+/* line 474, ../sass/_drupalaton.scss */
 .keynote .speaker-name {
   font-size: 36px;
   color: #e9590a;
@@ -1500,7 +1501,7 @@ body.page-sponsors .sponsor-row:last-child {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 481, ../sass/_drupalaton.scss */
+/* line 482, ../sass/_drupalaton.scss */
 .keynote .speaker-title {
   font-size: 22px;
   font-family: Oswald, Arial, Helvetica, "Nimbus Sans L", sans-serif;
@@ -1509,7 +1510,7 @@ body.page-sponsors .sponsor-row:last-child {
   font-weight: bold;
   color: #9da9af;
 }
-/* line 489, ../sass/_drupalaton.scss */
+/* line 490, ../sass/_drupalaton.scss */
 .keynote .speaker-nick {
   color: #fff;
   font-size: 22px;
@@ -1518,107 +1519,107 @@ body.page-sponsors .sponsor-row:last-child {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 497, ../sass/_drupalaton.scss */
+/* line 498, ../sass/_drupalaton.scss */
 .keynote .user {
   float: left;
   margin: 30px 7px 22px 7px;
   width: 300px;
 }
-/* line 502, ../sass/_drupalaton.scss */
+/* line 503, ../sass/_drupalaton.scss */
 .keynote .user .image {
   margin-top: 25px;
 }
-/* line 505, ../sass/_drupalaton.scss */
+/* line 506, ../sass/_drupalaton.scss */
 .keynote .user .tab-button {
   width: 90%;
   margin-top: 25px;
 }
-/* line 509, ../sass/_drupalaton.scss */
+/* line 510, ../sass/_drupalaton.scss */
 .keynote .user .tab-button a {
   color: #fff;
 }
-/* line 514, ../sass/_drupalaton.scss */
+/* line 515, ../sass/_drupalaton.scss */
 .keynote .user .speaker-title {
   margin-bottom: 49px;
 }
-/* line 518, ../sass/_drupalaton.scss */
+/* line 519, ../sass/_drupalaton.scss */
 .keynote .views-row-first .speaker-title,
 .keynote .views-row-last .speaker-title {
   margin-bottom: 0;
 }
 
-/* line 524, ../sass/_drupalaton.scss */
+/* line 525, ../sass/_drupalaton.scss */
 body.node-type-speaker .field-name-field-speaker-photo {
   float: right;
   margin: -30px 0 15px 15px;
 }
-/* line 528, ../sass/_drupalaton.scss */
+/* line 529, ../sass/_drupalaton.scss */
 body.node-type-speaker .field-name-field-speaker-job-title {
   margin: 40px 0 0 0;
 }
-/* line 531, ../sass/_drupalaton.scss */
+/* line 532, ../sass/_drupalaton.scss */
 body.node-type-speaker .field-name-field-speaker-job-title .field-label {
   margin: 0;
 }
-/* line 536, ../sass/_drupalaton.scss */
+/* line 537, ../sass/_drupalaton.scss */
 body.node-type-speaker .field-label,
 body.node-type-speaker .field-item {
   font-size: 24px;
 }
 
-/* line 543, ../sass/_drupalaton.scss */
+/* line 544, ../sass/_drupalaton.scss */
 body.page-node-edit .field-name-field-speaker-photo {
   float: none;
   margin: 20px 0;
 }
-/* line 547, ../sass/_drupalaton.scss */
+/* line 548, ../sass/_drupalaton.scss */
 body.page-node-edit .field-name-field-sponsor-logo {
   position: relative;
   margin-top: 0;
   left: 0;
 }
-/* line 552, ../sass/_drupalaton.scss */
+/* line 553, ../sass/_drupalaton.scss */
 body.page-node-edit .node {
   position: relative;
 }
-/* line 555, ../sass/_drupalaton.scss */
+/* line 556, ../sass/_drupalaton.scss */
 body.page-node-edit .node .field-label {
   margin: 0;
 }
 
-/* line 560, ../sass/_drupalaton.scss */
+/* line 561, ../sass/_drupalaton.scss */
 p.price {
   display: none;
 }
 
-/* line 564, ../sass/_drupalaton.scss */
+/* line 565, ../sass/_drupalaton.scss */
 section {
   margin-top: -4.5em;
   padding-top: 4.5em;
 }
 
-/* line 568, ../sass/_drupalaton.scss */
+/* line 569, ../sass/_drupalaton.scss */
 .tab-content {
   background-color: #1675af;
   padding: 40px 0 50px;
   margin-top: -1px;
 }
-/* line 574, ../sass/_drupalaton.scss */
+/* line 575, ../sass/_drupalaton.scss */
 .tab-content p a {
   color: #8abad7;
   text-shadow: 0 -2px #082637;
   transition: color 1s;
 }
-/* line 579, ../sass/_drupalaton.scss */
+/* line 580, ../sass/_drupalaton.scss */
 .tab-content p a:hover {
   text-decoration: underline;
 }
-/* line 584, ../sass/_drupalaton.scss */
+/* line 585, ../sass/_drupalaton.scss */
 .tab-content p, .tab-content ul, .tab-content li, .tab-content h3 {
   color: #fff;
 }
 
-/* line 590, ../sass/_drupalaton.scss */
+/* line 591, ../sass/_drupalaton.scss */
 .tab-button a {
   display: block;
   color: #ffffff;
@@ -1657,33 +1658,33 @@ section {
   transform: translate(0, 3px);
 }
 
-/* line 596, ../sass/_drupalaton.scss */
+/* line 597, ../sass/_drupalaton.scss */
 .about {
   margin-top: 25px;
 }
 
-/* line 599, ../sass/_drupalaton.scss */
+/* line 600, ../sass/_drupalaton.scss */
 .event-data {
   background: url("../img/drupalaton_hungary.jpg") no-repeat scroll top right transparent;
   padding: 20px 0;
   margin-bottom: 20px;
 }
 
-/* line 605, ../sass/_drupalaton.scss */
+/* line 606, ../sass/_drupalaton.scss */
 .about-buttons .tab-button {
   width: 31%;
   float: left;
 }
-/* line 609, ../sass/_drupalaton.scss */
+/* line 610, ../sass/_drupalaton.scss */
 .about-buttons .tab-button a {
   color: #fff;
 }
-/* line 612, ../sass/_drupalaton.scss */
+/* line 613, ../sass/_drupalaton.scss */
 .about-buttons .tab-button.center {
   margin: 0 30px;
 }
 
-/* line 617, ../sass/_drupalaton.scss */
+/* line 618, ../sass/_drupalaton.scss */
 .sponsors.tab-button {
   position: relative;
   color: #fff;
@@ -1710,11 +1711,11 @@ section {
   border: 0;
 }
 
-/* line 627, ../sass/_drupalaton.scss */
+/* line 628, ../sass/_drupalaton.scss */
 .contactmin .content {
   padding: 80px 0;
 }
-/* line 630, ../sass/_drupalaton.scss */
+/* line 631, ../sass/_drupalaton.scss */
 .contactmin p {
   margin: 0;
   display: block;
@@ -1726,17 +1727,17 @@ section {
   font-weight: bold;
   text-shadow: 1px 1px 1px #082637;
 }
-/* line 641, ../sass/_drupalaton.scss */
+/* line 642, ../sass/_drupalaton.scss */
 .contactmin p span a {
   color: #fff;
 }
 
-/* line 647, ../sass/_drupalaton.scss */
+/* line 648, ../sass/_drupalaton.scss */
 div.twitter {
   background-color: #082637;
   padding: 60px 0;
 }
-/* line 651, ../sass/_drupalaton.scss */
+/* line 652, ../sass/_drupalaton.scss */
 div.twitter span {
   display: block;
   font-family: Oswald, Arial, Helvetica, "Nimbus Sans L", sans-serif;
@@ -1746,17 +1747,17 @@ div.twitter span {
   font-size: 67px;
   font-weight: bold;
 }
-/* line 660, ../sass/_drupalaton.scss */
+/* line 661, ../sass/_drupalaton.scss */
 div.twitter span.second {
   color: #37aae1;
 }
 
-/* line 666, ../sass/_drupalaton.scss */
+/* line 667, ../sass/_drupalaton.scss */
 div.newsletter {
   background-color: #1675af;
   padding: 60px 0;
 }
-/* line 670, ../sass/_drupalaton.scss */
+/* line 671, ../sass/_drupalaton.scss */
 div.newsletter span {
   display: block;
   font-family: Oswald, Arial, Helvetica, "Nimbus Sans L", sans-serif;
@@ -1766,15 +1767,15 @@ div.newsletter span {
   font-size: 67px;
   font-weight: bold;
 }
-/* line 679, ../sass/_drupalaton.scss */
+/* line 680, ../sass/_drupalaton.scss */
 div.newsletter span.second {
   color: #37aae1;
 }
-/* line 682, ../sass/_drupalaton.scss */
+/* line 683, ../sass/_drupalaton.scss */
 div.newsletter span.first {
   color: #082637;
 }
-/* line 686, ../sass/_drupalaton.scss */
+/* line 687, ../sass/_drupalaton.scss */
 div.newsletter input.email {
   position: relative;
   color: #082637;
@@ -1799,7 +1800,7 @@ div.newsletter input.email {
   text-align: left;
   border: 0;
 }
-/* line 706, ../sass/_drupalaton.scss */
+/* line 707, ../sass/_drupalaton.scss */
 div.newsletter input.button {
   position: relative;
   color: #fff;
@@ -1826,7 +1827,7 @@ div.newsletter input.button {
   border: 0;
 }
 
-/* line 719, ../sass/_drupalaton.scss */
+/* line 720, ../sass/_drupalaton.scss */
 div.social {
   background-color: #ef5825;
   padding: 60px 0;
@@ -1836,7 +1837,7 @@ div.social {
   text-transform: uppercase;
   line-height: 100%;
 }
-/* line 729, ../sass/_drupalaton.scss */
+/* line 730, ../sass/_drupalaton.scss */
 div.social p {
   font-size: 67px;
   font-weight: bold;
@@ -1844,14 +1845,14 @@ div.social p {
   padding: 0;
 }
 
-/* line 738, ../sass/_drupalaton.scss */
+/* line 739, ../sass/_drupalaton.scss */
 .partner-link {
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* line 746, ../sass/_drupalaton.scss */
+/* line 747, ../sass/_drupalaton.scss */
 .sponsor-link:hover,
 .sponsor-link:focus,
 .partner-link:hover,
@@ -1859,7 +1860,7 @@ div.social p {
   border-color: #f0a303;
 }
 
-/* line 752, ../sass/_drupalaton.scss */
+/* line 753, ../sass/_drupalaton.scss */
 .location-area {
   background: #e7e7e7;
   border: 1px solid #ccc;
@@ -1867,56 +1868,56 @@ div.social p {
   height: 300px;
 }
 
-/* line 760, ../sass/_drupalaton.scss */
+/* line 761, ../sass/_drupalaton.scss */
 .location,
 .sessionproposals,
 .about {
   margin-bottom: 60px;
 }
 
-/* line 763, ../sass/_drupalaton.scss */
+/* line 764, ../sass/_drupalaton.scss */
 .keynote.container_12 {
   margin-bottom: 20px;
   margin-top: 60px;
 }
 
-/* line 767, ../sass/_drupalaton.scss */
+/* line 768, ../sass/_drupalaton.scss */
 .registration {
   margin-bottom: 40px;
 }
 
-/* line 770, ../sass/_drupalaton.scss */
+/* line 771, ../sass/_drupalaton.scss */
 .about-wrapper {
   margin-top: 20px;
 }
 
-/* line 776, ../sass/_drupalaton.scss */
+/* line 777, ../sass/_drupalaton.scss */
 table {
   font-size: 18px;
   width: 100%;
 }
-/* line 782, ../sass/_drupalaton.scss */
+/* line 783, ../sass/_drupalaton.scss */
 table thead th {
   padding: 0;
   border-bottom: 0;
 }
-/* line 786, ../sass/_drupalaton.scss */
+/* line 787, ../sass/_drupalaton.scss */
 table thead th span {
   background-color: #1776b0;
   color: #fff;
   padding: 10px;
   display: table-cell;
 }
-/* line 794, ../sass/_drupalaton.scss */
+/* line 795, ../sass/_drupalaton.scss */
 table tbody {
   border-top: 0;
 }
-/* line 797, ../sass/_drupalaton.scss */
+/* line 798, ../sass/_drupalaton.scss */
 table tbody tr {
   border-bottom: 0;
   background-color: transparent;
 }
-/* line 801, ../sass/_drupalaton.scss */
+/* line 802, ../sass/_drupalaton.scss */
 table tbody tr td {
   padding: 10px;
   border-width: 4px 2px;
@@ -1928,75 +1929,75 @@ table tbody tr td {
   font-size: 20px;
   vertical-align: top;
 }
-/* line 812, ../sass/_drupalaton.scss */
+/* line 813, ../sass/_drupalaton.scss */
 table tbody tr td a {
   color: #fff;
 }
-/* line 815, ../sass/_drupalaton.scss */
+/* line 816, ../sass/_drupalaton.scss */
 table tbody tr td.hide {
   background-color: #3a5260;
   color: #a9b4ba;
 }
-/* line 819, ../sass/_drupalaton.scss */
+/* line 820, ../sass/_drupalaton.scss */
 table tbody tr td.time {
   background-color: #1776b0;
   font-weight: normal;
   width: 15%;
 }
-/* line 824, ../sass/_drupalaton.scss */
+/* line 825, ../sass/_drupalaton.scss */
 table tbody tr td.time.hide {
   color: #fff;
 }
-/* line 830, ../sass/_drupalaton.scss */
+/* line 831, ../sass/_drupalaton.scss */
 table tbody tr td:hover {
   background-color: #ef5825;
   transition: background-color 0.6s ease 0s;
   color: #fff;
 }
-/* line 835, ../sass/_drupalaton.scss */
+/* line 836, ../sass/_drupalaton.scss */
 table tbody tr td:hover a {
   color: #fff;
   text-decoration: underline;
 }
-/* line 842, ../sass/_drupalaton.scss */
+/* line 843, ../sass/_drupalaton.scss */
 table tbody tr:nth-child(odd),
 table tbody tr:nth-child(even) {
   background-color: transparent;
   border-bottom: 0;
 }
 
-/* line 849, ../sass/_drupalaton.scss */
+/* line 850, ../sass/_drupalaton.scss */
 table.program {
   margin: 15px 0;
 }
-/* line 853, ../sass/_drupalaton.scss */
+/* line 854, ../sass/_drupalaton.scss */
 table.program thead th.name {
   width: 22%;
 }
-/* line 856, ../sass/_drupalaton.scss */
+/* line 857, ../sass/_drupalaton.scss */
 table.program thead th:first-child {
   width: 15%;
 }
 
-/* line 861, ../sass/_drupalaton.scss */
+/* line 862, ../sass/_drupalaton.scss */
 body.front .panel-flexible .panel-separator {
   margin-top: 50px;
   margin-bottom: 50px;
   height: 1px;
 }
 
-/* line 866, ../sass/_drupalaton.scss */
+/* line 867, ../sass/_drupalaton.scss */
 .sponsor_packages {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 870, ../sass/_drupalaton.scss */
+/* line 871, ../sass/_drupalaton.scss */
 .sponsor_packages table tbody tr td {
   background-color: transparent;
   color: #092738;
 }
 
-/* line 877, ../sass/_drupalaton.scss */
+/* line 878, ../sass/_drupalaton.scss */
 .view-sessions {
   /*.views-row {
     margin-bottom: 60px;
@@ -2013,15 +2014,15 @@ body.front .panel-flexible .panel-separator {
     margin-top: 50px;
   }*/
 }
-/* line 878, ../sass/_drupalaton.scss */
+/* line 879, ../sass/_drupalaton.scss */
 .view-sessions * {
   line-height: 100%;
 }
-/* line 881, ../sass/_drupalaton.scss */
+/* line 882, ../sass/_drupalaton.scss */
 .view-sessions p {
   line-height: 140%;
 }
-/* line 898, ../sass/_drupalaton.scss */
+/* line 899, ../sass/_drupalaton.scss */
 .view-sessions .views-field-field-speaker-session-title {
   color: #ef5825;
   font-size: 35px;
@@ -2029,14 +2030,14 @@ body.front .panel-flexible .panel-separator {
   font-family: Oswald, Arial, Helvetica, "Nimbus Sans L", sans-serif;
   line-height: 100%;
 }
-/* line 905, ../sass/_drupalaton.scss */
+/* line 906, ../sass/_drupalaton.scss */
 .view-sessions .views-field-field-speaker-session-type {
   font-size: 22px;
   font-family: Oswald, Arial, Helvetica, "Nimbus Sans L", sans-serif;
   color: #9da9af;
   text-transform: uppercase;
 }
-/* line 914, ../sass/_drupalaton.scss */
+/* line 915, ../sass/_drupalaton.scss */
 .view-sessions .views-field-title {
   color: #092738;
   font-size: 22px;
@@ -2045,24 +2046,24 @@ body.front .panel-flexible .panel-separator {
   line-height: 140%;
   font-weight: bold;
 }
-/* line 922, ../sass/_drupalaton.scss */
+/* line 923, ../sass/_drupalaton.scss */
 .view-sessions .views-field-title a {
   color: #092738;
 }
-/* line 926, ../sass/_drupalaton.scss */
+/* line 927, ../sass/_drupalaton.scss */
 .view-sessions .views-field-field-speaker-job-title {
   font-size: 22px;
   font-family: Oswald, Arial, Helvetica, "Nimbus Sans L", sans-serif;
   color: #9da9af;
   text-transform: uppercase;
 }
-/* line 932, ../sass/_drupalaton.scss */
+/* line 933, ../sass/_drupalaton.scss */
 .view-sessions .views-field-field-speaker-photo {
   float: left;
   margin: 0 15px 15px 0;
 }
 
-/* line 941, ../sass/_drupalaton.scss */
+/* line 942, ../sass/_drupalaton.scss */
 #live {
   position: fixed;
   top: 43%;
@@ -2079,17 +2080,17 @@ body.front .panel-flexible .panel-separator {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 952, ../sass/_drupalaton.scss */
+/* line 953, ../sass/_drupalaton.scss */
 #live.oneday {
   background: url("../img/live_oneday.png") no-repeat scroll 0 0 transparent;
   height: 135px;
 }
-/* line 956, ../sass/_drupalaton.scss */
+/* line 957, ../sass/_drupalaton.scss */
 #live.twoday {
   background: url("../img/live_twoday.png") no-repeat scroll 0 0 transparent;
   height: 209px;
 }
-/* line 961, ../sass/_drupalaton.scss */
+/* line 962, ../sass/_drupalaton.scss */
 #live:hover {
   right: 0;
   -webkit-transition-property: right;
@@ -2101,12 +2102,12 @@ body.front .panel-flexible .panel-separator {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 967, ../sass/_drupalaton.scss */
+/* line 968, ../sass/_drupalaton.scss */
 #live .inner {
   margin: 36px 0 0 131px;
   overflow: hidden;
 }
-/* line 971, ../sass/_drupalaton.scss */
+/* line 972, ../sass/_drupalaton.scss */
 #live .icon {
   width: 56px;
   height: 56px;
@@ -2114,46 +2115,46 @@ body.front .panel-flexible .panel-separator {
   float: left;
   display: block;
 }
-/* line 978, ../sass/_drupalaton.scss */
+/* line 979, ../sass/_drupalaton.scss */
 #live a {
   font-family: Oswald, Arial, Helvetica, "Nimbus Sans L", sans-serif;
   overflow: hidden;
   margin-bottom: 15px;
   display: block;
 }
-/* line 984, ../sass/_drupalaton.scss */
+/* line 985, ../sass/_drupalaton.scss */
 #live a:hover .icon {
   background-position: 0 -144px;
 }
-/* line 987, ../sass/_drupalaton.scss */
+/* line 988, ../sass/_drupalaton.scss */
 #live .text {
   font-size: 20px;
   float: left;
   margin-left: 20px;
   margin-top: 5px;
 }
-/* line 993, ../sass/_drupalaton.scss */
+/* line 994, ../sass/_drupalaton.scss */
 #live .day {
   color: #fff;
 }
-/* line 996, ../sass/_drupalaton.scss */
+/* line 997, ../sass/_drupalaton.scss */
 #live .dayname {
   color: #f4ac85;
 }
 
-/* line 1001, ../sass/_drupalaton.scss */
+/* line 1002, ../sass/_drupalaton.scss */
 img.img-left {
   float: left;
   margin: 0 15px 15px 0;
 }
 
-/* line 1005, ../sass/_drupalaton.scss */
+/* line 1006, ../sass/_drupalaton.scss */
 img.img-right {
   float: right;
   margin: 0 0 15px 15px;
 }
 
-/* line 1009, ../sass/_drupalaton.scss */
+/* line 1010, ../sass/_drupalaton.scss */
 .contactmin {
   background-color: #2b9fe0;
   padding: 60px;
@@ -2162,18 +2163,18 @@ img.img-right {
 /**
  * Sponsor badges
  */
-/* line 1018, ../sass/_drupalaton.scss */
+/* line 1019, ../sass/_drupalaton.scss */
 .sponsor-pack {
   float: left;
   width: 45%;
   margin: 60px 10px 30px 10px;
 }
-/* line 1023, ../sass/_drupalaton.scss */
+/* line 1024, ../sass/_drupalaton.scss */
 body.front .sponsor-pack {
   width: 21.5%;
   margin: 60px 10px 30px 10px;
 }
-/* line 1027, ../sass/_drupalaton.scss */
+/* line 1028, ../sass/_drupalaton.scss */
 .sponsor-pack .badge {
   background-repeat: no-repeat;
   background-image: url("../img/sprite.png");
@@ -2184,25 +2185,25 @@ body.front .sponsor-pack {
   margin: 0 auto 20px auto;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 1027, ../sass/_drupalaton.scss */
+  /* line 1028, ../sass/_drupalaton.scss */
   .sponsor-pack .badge {
     background-image: url("../img/sprite-2x.png");
     background-size: 200px 800px;
   }
 }
-/* line 1033, ../sass/_drupalaton.scss */
+/* line 1034, ../sass/_drupalaton.scss */
 .sponsor-pack * {
   line-height: 100%;
 }
-/* line 1037, ../sass/_drupalaton.scss */
+/* line 1038, ../sass/_drupalaton.scss */
 .sponsor-pack .text ul {
   padding: 0 0 0 20px;
 }
-/* line 1040, ../sass/_drupalaton.scss */
+/* line 1041, ../sass/_drupalaton.scss */
 .sponsor-pack .text ul li {
   font-size: 18px;
 }
-/* line 1045, ../sass/_drupalaton.scss */
+/* line 1046, ../sass/_drupalaton.scss */
 .sponsor-pack .tab-button a {
   position: relative;
   color: #fff;
@@ -2228,7 +2229,7 @@ body.front .sponsor-pack {
   padding: 9px 30px 6px 30px;
   font-size: 20px;
 }
-/* line 1051, ../sass/_drupalaton.scss */
+/* line 1052, ../sass/_drupalaton.scss */
 .sponsor-pack .inactive span {
   position: relative;
   color: #fff;
@@ -2256,43 +2257,43 @@ body.front .sponsor-pack {
   background-color: #bfbfbf;
 }
 
-/* line 1059, ../sass/_drupalaton.scss */
+/* line 1060, ../sass/_drupalaton.scss */
 .sponsor-diamond .badge {
   background-position: 0 0;
 }
 
-/* line 1063, ../sass/_drupalaton.scss */
+/* line 1064, ../sass/_drupalaton.scss */
 .sponsor-gold .badge {
   background-position: 0 -200px;
 }
-/* line 1066, ../sass/_drupalaton.scss */
+/* line 1067, ../sass/_drupalaton.scss */
 .sponsor-gold div.tab-button {
   margin-top: 51px;
 }
-/* line 1069, ../sass/_drupalaton.scss */
+/* line 1070, ../sass/_drupalaton.scss */
 body.front .sponsor-gold div.tab-button {
   margin-top: 0;
 }
 
-/* line 1074, ../sass/_drupalaton.scss */
+/* line 1075, ../sass/_drupalaton.scss */
 .sponsor-silver .badge {
   background-position: 0 -400px;
 }
 
-/* line 1078, ../sass/_drupalaton.scss */
+/* line 1079, ../sass/_drupalaton.scss */
 .sponsor-bronze .badge {
   background-position: 0 -600px;
 }
-/* line 1081, ../sass/_drupalaton.scss */
+/* line 1082, ../sass/_drupalaton.scss */
 .sponsor-bronze div.tab-button {
   margin-top: 106px;
 }
-/* line 1084, ../sass/_drupalaton.scss */
+/* line 1085, ../sass/_drupalaton.scss */
 body.front .sponsor-bronze div.tab-button {
   margin-top: 0;
 }
 
-/* line 1091, ../sass/_drupalaton.scss */
+/* line 1092, ../sass/_drupalaton.scss */
 .pack-name,
 .pack-price,
 .pack-status {
@@ -2302,31 +2303,31 @@ body.front .sponsor-bronze div.tab-button {
   text-align: center;
 }
 
-/* line 1098, ../sass/_drupalaton.scss */
+/* line 1099, ../sass/_drupalaton.scss */
 .pack-name,
 .pack-price {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 1102, ../sass/_drupalaton.scss */
+/* line 1103, ../sass/_drupalaton.scss */
 .pack-name {
   padding-top: 74px;
 }
-/* line 1105, ../sass/_drupalaton.scss */
+/* line 1106, ../sass/_drupalaton.scss */
 .pack-name span {
   font-size: 36px;
 }
 
-/* line 1109, ../sass/_drupalaton.scss */
+/* line 1110, ../sass/_drupalaton.scss */
 .pack-price {
   margin: 5px 0;
 }
-/* line 1112, ../sass/_drupalaton.scss */
+/* line 1113, ../sass/_drupalaton.scss */
 .pack-price span {
   font-size: 18px;
 }
 
-/* line 1116, ../sass/_drupalaton.scss */
+/* line 1117, ../sass/_drupalaton.scss */
 .pack-status {
   color: #fff;
   margin: 24px 0 0 0;
@@ -2922,13 +2923,13 @@ body.front .sponsor-bronze div.tab-button {
    */
 }
 @media all and (max-width: 1300px) {
-  /* line 1139, ../sass/_drupalaton.scss */
+  /* line 1140, ../sass/_drupalaton.scss */
   .hills {
     background-position: -320px 0;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 600px) {
-  /* line 1145, ../sass/_drupalaton.scss */
+  /* line 1146, ../sass/_drupalaton.scss */
   .landscape .info h1 span {
     background-size: 270px auto;
     margin-left: 0.2em;
