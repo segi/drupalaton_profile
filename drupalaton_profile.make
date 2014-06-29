@@ -85,3 +85,7 @@ projects[ckeditor][patch][] = "http://drupal.org/files/ckeditor-install-lib-1898
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0/ckeditor_4.0_standard.tar.gz"
 libraries[ckeditor][type] = "libraries"
+
+libraries[respond][download][type] = "get"
+libraries[respond][download][url] = "https://github.com/scottjehl/Respond/archive/master.zip"
+libraries[respond][destination] = "../../profiles/drupalaton_profile/themes/drupalaton_theme/lib"

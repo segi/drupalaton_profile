@@ -95,7 +95,6 @@ h1#page-title {
 body.front {
   .landscape {
     background: url("../img/sky.png") repeat-x scroll 0 0 transparent;
-    height: 800px;
     position: relative;
   }
   .hills {
@@ -130,7 +129,6 @@ body.front {
     }
   }
   .lake {
-    height: 800px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -147,7 +145,6 @@ body.front {
       margin: 0 auto;
     }
     .logo-inner {
-      //width: 960px;
       margin: 0 auto;
       padding: 0 $dekstopgutter;
     }
@@ -155,9 +152,7 @@ body.front {
   .info {
     height: 400px;
     margin-top: 30px;
-    position: absolute;
-    top: 288px;
-    width: 100%;
+    margin: 0 auto;
   
     h1 {
       color: transparent;
@@ -165,18 +160,25 @@ body.front {
       height: 100%;
       position: relative;
       text-indent: -9000em;
-      width: 960px;
-      margin: 0 auto;
   
       span {
         background-repeat: no-repeat;
         display: block;
         height: 100%;
         position: absolute;
-        width: 100%;
-        background-image: url("../img/big_typo.png");
-        
+        width: 100%; 
       }
+    }
+    .view-content,
+    .view-footer {
+      text-align: center;
+    }
+    .view-footer {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: $oswald;
+      text-align: center;
     }
   }
   .logo-link {
@@ -422,10 +424,6 @@ body.not-front {
   }
 }
 .view-sponsors {
-  .views-row {
-    float: left;
-    margin-right: 25px;
-  }
   .sponsor-row {
     @include clearfix;
     margin-bottom: 10px;

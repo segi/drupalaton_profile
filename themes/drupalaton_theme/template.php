@@ -55,5 +55,6 @@ function live_twoday(){
  */
 function drupalaton_theme_preprocess_page(&$variables) {
   $variables['sponsor_diamond'] = views_embed_view('sponsors', 'block_1');
+  $variables['sponsor_diamond_header'] = views_embed_view('sponsors', 'sponsor_diamond_header');
   $variables['sponsor_gold'] = views_embed_view('sponsors', 'block_2');
 }
