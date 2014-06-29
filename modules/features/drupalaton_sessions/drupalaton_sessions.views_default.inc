@@ -30,7 +30,7 @@ function drupalaton_sessions_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Relationship: Nodequeue: Queue */
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
@@ -98,6 +98,60 @@ function drupalaton_sessions_views_default_views() {
 
   /* Display: Featured session */
   $handler = $view->new_display('panel_pane', 'Featured session', 'featured_session');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['row_class'] = 'user';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  /* Field: Content: Speaker name */
+  $handler->display->display_options['fields']['field_session_speaker_name']['id'] = 'field_session_speaker_name';
+  $handler->display->display_options['fields']['field_session_speaker_name']['table'] = 'field_data_field_session_speaker_name';
+  $handler->display->display_options['fields']['field_session_speaker_name']['field'] = 'field_session_speaker_name';
+  $handler->display->display_options['fields']['field_session_speaker_name']['label'] = '';
+  $handler->display->display_options['fields']['field_session_speaker_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_session_speaker_name']['element_wrapper_class'] = 'speaker-name';
+  /* Field: Content: Speaker nick */
+  $handler->display->display_options['fields']['field_session_speaker_nick']['id'] = 'field_session_speaker_nick';
+  $handler->display->display_options['fields']['field_session_speaker_nick']['table'] = 'field_data_field_session_speaker_nick';
+  $handler->display->display_options['fields']['field_session_speaker_nick']['field'] = 'field_session_speaker_nick';
+  $handler->display->display_options['fields']['field_session_speaker_nick']['label'] = '';
+  $handler->display->display_options['fields']['field_session_speaker_nick']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_session_speaker_nick']['element_wrapper_class'] = 'speaker-nick';
+  /* Field: Content: Position */
+  $handler->display->display_options['fields']['field_session_speaker_title']['id'] = 'field_session_speaker_title';
+  $handler->display->display_options['fields']['field_session_speaker_title']['table'] = 'field_data_field_session_speaker_title';
+  $handler->display->display_options['fields']['field_session_speaker_title']['field'] = 'field_session_speaker_title';
+  $handler->display->display_options['fields']['field_session_speaker_title']['label'] = '';
+  $handler->display->display_options['fields']['field_session_speaker_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_session_speaker_title']['element_wrapper_class'] = 'speaker-title';
+  /* Field: Content: Speaker image */
+  $handler->display->display_options['fields']['field_session_speaker_image']['id'] = 'field_session_speaker_image';
+  $handler->display->display_options['fields']['field_session_speaker_image']['table'] = 'field_data_field_session_speaker_image';
+  $handler->display->display_options['fields']['field_session_speaker_image']['field'] = 'field_session_speaker_image';
+  $handler->display->display_options['fields']['field_session_speaker_image']['label'] = '';
+  $handler->display->display_options['fields']['field_session_speaker_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_session_speaker_image']['element_wrapper_class'] = 'image';
+  $handler->display->display_options['fields']['field_session_speaker_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_session_speaker_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'about-speaker tab-button';
+  $handler->display->display_options['fields']['view_node']['text'] = 'View details';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
