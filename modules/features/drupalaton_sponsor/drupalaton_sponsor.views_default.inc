@@ -168,6 +168,63 @@ function drupalaton_sponsor_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_category_value']['value'] = array(
     'gold' => 'gold',
   );
+
+  /* Display: Diamond in header */
+  $handler = $view->new_display('block', 'Diamond in header', 'sponsor_diamond_header');
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = 'Diamond sponsor';
+  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Big logo */
+  $handler->display->display_options['fields']['field_sponsor_big_logo']['id'] = 'field_sponsor_big_logo';
+  $handler->display->display_options['fields']['field_sponsor_big_logo']['table'] = 'field_data_field_sponsor_big_logo';
+  $handler->display->display_options['fields']['field_sponsor_big_logo']['field'] = 'field_sponsor_big_logo';
+  $handler->display->display_options['fields']['field_sponsor_big_logo']['label'] = '';
+  $handler->display->display_options['fields']['field_sponsor_big_logo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sponsor_big_logo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_sponsor_big_logo']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_sponsor_category']['id'] = 'field_sponsor_category';
+  $handler->display->display_options['fields']['field_sponsor_category']['table'] = 'field_data_field_sponsor_category';
+  $handler->display->display_options['fields']['field_sponsor_category']['field'] = 'field_sponsor_category';
+  $handler->display->display_options['fields']['field_sponsor_category']['label'] = '';
+  $handler->display->display_options['fields']['field_sponsor_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_sponsor_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'sponsor' => 'sponsor',
+  );
+  /* Filter criterion: Content: Category (field_sponsor_category) */
+  $handler->display->display_options['filters']['field_sponsor_category_value']['id'] = 'field_sponsor_category_value';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['table'] = 'field_data_field_sponsor_category';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['field'] = 'field_sponsor_category_value';
+  $handler->display->display_options['filters']['field_sponsor_category_value']['value'] = array(
+    'diamond' => 'diamond',
+  );
+  /* Filter criterion: Content: Big logo (field_sponsor_big_logo:fid) */
+  $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['id'] = 'field_sponsor_big_logo_fid';
+  $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['table'] = 'field_data_field_sponsor_big_logo';
+  $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['field'] = 'field_sponsor_big_logo_fid';
+  $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['operator'] = '!=';
   $export['sponsors'] = $view;
 
   return $export;
