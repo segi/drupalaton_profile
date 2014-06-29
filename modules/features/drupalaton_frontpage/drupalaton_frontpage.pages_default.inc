@@ -280,28 +280,6 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $pane->uuid = '7787364b-d64c-45e0-a547-648b5ac359e8';
     $display->content['new-7787364b-d64c-45e0-a547-648b5ac359e8'] = $pane;
     $display->panels['bottom'][4] = 'new-7787364b-d64c-45e0-a547-648b5ac359e8';
-    $pane = new stdClass();
-    $pane->pid = 'new-d3788035-6524-4013-a865-4d599b3db6e4';
-    $pane->panel = 'sponsow';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'sponsors-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'container_12 sponsors',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'd3788035-6524-4013-a865-4d599b3db6e4';
-    $display->content['new-d3788035-6524-4013-a865-4d599b3db6e4'] = $pane;
-    $display->panels['sponsow'][0] = 'new-d3788035-6524-4013-a865-4d599b3db6e4';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
