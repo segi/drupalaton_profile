@@ -87,7 +87,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
           0 => 'bottom',
         ),
         'parent' => 'main',
-        'class' => '',
+        'class' => 'center',
       ),
       'bottom' => array(
         'type' => 'region',
@@ -95,7 +95,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
         'width' => 100,
         'width_type' => '%',
         'parent' => '1',
-        'class' => '',
+        'class' => 'bottom',
       ),
       2 => array(
         'type' => 'row',
@@ -112,7 +112,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
         'width' => 100,
         'width_type' => '%',
         'parent' => '2',
-        'class' => '',
+        'class' => 'sponsor-region',
       ),
     ),
   );
