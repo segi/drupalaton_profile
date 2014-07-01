@@ -458,13 +458,13 @@ body.page-sponsors{
 body.front .panel-flexible .sponsor {
   width: 100%;
   background-color: $sectiontitle;
-  
+
+  .pane-title {
+    color: #fff;
+  }
   .keynote {
     ul {
       list-style: none;
-    }
-    .pane-title {
-      color: #fff;
     }
     .speaker-name {
       font-size: $base-font-size * 2 + 8;
