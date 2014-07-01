@@ -1477,13 +1477,13 @@ body.front .panel-flexible .sponsor {
   width: 100%;
   background-color: #082637;
 }
-/* line 463, ../sass/_drupalaton.scss */
-body.front .panel-flexible .sponsor .keynote ul {
-  list-style: none;
+/* line 462, ../sass/_drupalaton.scss */
+body.front .panel-flexible .sponsor .pane-title {
+  color: #fff;
 }
 /* line 466, ../sass/_drupalaton.scss */
-body.front .panel-flexible .sponsor .keynote .pane-title {
-  color: #fff;
+body.front .panel-flexible .sponsor .keynote ul {
+  list-style: none;
 }
 /* line 469, ../sass/_drupalaton.scss */
 body.front .panel-flexible .sponsor .keynote .speaker-name {
