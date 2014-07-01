@@ -1125,7 +1125,7 @@ img.img-right {
   @import "_tablet.scss";
 }
 // mobile device
-@media all and (max-width: 599px) {
+@media all and (max-width: 640px) {
   @import "_mobile.scss";
 }
 // Large desktop

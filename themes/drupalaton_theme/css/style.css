@@ -2609,7 +2609,7 @@ body.front .sponsor-bronze div.tab-button {
     padding: 50px;
   }
 }
-@media all and (max-width: 599px) {
+@media all and (max-width: 640px) {
   /**
    * @file
    * Formatting for small devices.
@@ -2659,7 +2659,7 @@ body.front .sponsor-bronze div.tab-button {
   }
   /* line 40, ../sass/_mobile.scss */
   body.front .landscape {
-    height: 492px;
+    height: 562px;
   }
   /* line 43, ../sass/_mobile.scss */
   body.front .landscape .hills {
@@ -2699,166 +2699,172 @@ body.front .sponsor-bronze div.tab-button {
     margin-left: 0;
     width: 100%;
   }
-  /* line 78, ../sass/_mobile.scss */
-  body.front .landscape .lake {
-    height: 492px;
+  /* line 77, ../sass/_mobile.scss */
+  body.front .landscape .info .sponsor {
+    position: relative;
+    z-index: 10;
+    margin: 180px 0 0 0;
   }
-  /* line 81, ../sass/_mobile.scss */
+  /* line 83, ../sass/_mobile.scss */
+  body.front .landscape .lake {
+    height: 562px;
+  }
+  /* line 86, ../sass/_mobile.scss */
   body.front .landscape .logo-link-inner {
     width: 100%;
     max-width: 599px;
   }
-  /* line 85, ../sass/_mobile.scss */
+  /* line 90, ../sass/_mobile.scss */
   body.front .landscape .logo-link-inner a {
     right: 17px;
     top: 193px;
   }
-  /* line 92, ../sass/_mobile.scss */
+  /* line 97, ../sass/_mobile.scss */
   body.front .sponsors .sponsor-row:nth-child(2) {
     position: relative !important;
     left: 0 !important;
     top: 0 !important;
   }
-  /* line 97, ../sass/_mobile.scss */
+  /* line 102, ../sass/_mobile.scss */
   body.front .sponsors h3 {
     float: none;
   }
-  /* line 100, ../sass/_mobile.scss */
+  /* line 105, ../sass/_mobile.scss */
   body.front .sponsors .views-row {
     float: none;
     margin: 10px 0;
   }
 
-  /* line 108, ../sass/_mobile.scss */
+  /* line 112, ../sass/_mobile.scss */
   .clouds,
   .boats {
     display: none;
   }
 
-  /* line 113, ../sass/_mobile.scss */
+  /* line 117, ../sass/_mobile.scss */
   .tabs {
     height: auto;
   }
-  /* line 116, ../sass/_mobile.scss */
+  /* line 120, ../sass/_mobile.scss */
   .tabs h2 {
     float: left;
     width: 30%;
     margin: 0 0 0 2%;
   }
-  /* line 121, ../sass/_mobile.scss */
+  /* line 125, ../sass/_mobile.scss */
   .tabs h2.last {
     margin-left: 0;
   }
-  /* line 124, ../sass/_mobile.scss */
+  /* line 128, ../sass/_mobile.scss */
   .tabs h2 span {
     display: none;
   }
-  /* line 127, ../sass/_mobile.scss */
+  /* line 131, ../sass/_mobile.scss */
   .tabs h2.middle {
     margin: 0 10px;
   }
-  /* line 130, ../sass/_mobile.scss */
+  /* line 134, ../sass/_mobile.scss */
   .tabs h2 a {
     padding: 5px;
     font-size: 14px;
   }
 
-  /* line 136, ../sass/_mobile.scss */
+  /* line 140, ../sass/_mobile.scss */
   .sponsors .tabs h2 a {
     font-size: 14px;
   }
 
-  /* line 140, ../sass/_mobile.scss */
+  /* line 144, ../sass/_mobile.scss */
   .content .wrapper {
     padding: 0 20px;
   }
 
-  /* line 145, ../sass/_mobile.scss */
+  /* line 149, ../sass/_mobile.scss */
   body.front .panels-flexible-row-last .container_12 {
     padding: 0 20px;
     width: 90%;
   }
 
-  /* line 150, ../sass/_mobile.scss */
+  /* line 154, ../sass/_mobile.scss */
   .event-data {
     background-image: none;
   }
 
-  /* line 155, ../sass/_mobile.scss */
+  /* line 159, ../sass/_mobile.scss */
   .twitter span,
   .newsletter form {
     padding: 0 20px;
   }
 
-  /* line 159, ../sass/_mobile.scss */
+  /* line 163, ../sass/_mobile.scss */
   div.twitter span,
   div.newsletter span {
     font-size: 32px;
     line-height: 120%;
   }
 
-  /* line 168, ../sass/_mobile.scss */
+  /* line 172, ../sass/_mobile.scss */
   .sponsors-bottom {
     padding: 0 20px;
   }
 
-  /* line 172, ../sass/_mobile.scss */
+  /* line 176, ../sass/_mobile.scss */
   div.newsletter input.email {
     float: none;
     width: 88.5%;
     margin: 20px 0 0 0;
     text-align: center;
   }
-  /* line 178, ../sass/_mobile.scss */
+  /* line 182, ../sass/_mobile.scss */
   div.newsletter input.button {
     width: 100%;
     float: none;
     margin: 20px 0 0 0;
   }
 
-  /* line 184, ../sass/_mobile.scss */
+  /* line 188, ../sass/_mobile.scss */
   .navigation {
     height: auto;
   }
 
-  /* line 188, ../sass/_mobile.scss */
+  /* line 192, ../sass/_mobile.scss */
   h2.section-title,
   .panel-pane h2.pane-title {
     font-size: 28px;
   }
 
-  /* line 191, ../sass/_mobile.scss */
+  /* line 195, ../sass/_mobile.scss */
   .about .event-data {
     padding-bottom: 180px;
     background-size: 100% auto;
     background-position: 0 bottom;
   }
 
-  /* line 197, ../sass/_mobile.scss */
+  /* line 201, ../sass/_mobile.scss */
   .contactmin p {
     font-size: 30px;
   }
 
-  /* line 202, ../sass/_mobile.scss */
+  /* line 206, ../sass/_mobile.scss */
   .sponsors .tab-button {
     width: 77%;
   }
 
-  /* line 207, ../sass/_mobile.scss */
+  /* line 211, ../sass/_mobile.scss */
   .boats .boat {
     display: none;
   }
 
-  /* line 212, ../sass/_mobile.scss */
+  /* line 216, ../sass/_mobile.scss */
   .tab-content p.price {
     display: block;
   }
 
-  /* line 217, ../sass/_mobile.scss */
+  /* line 221, ../sass/_mobile.scss */
   div.social img {
     height: 28px;
   }
-  /* line 220, ../sass/_mobile.scss */
+  /* line 224, ../sass/_mobile.scss */
   div.social p {
     padding-left: 20px;
     padding-right: 20px;
@@ -2866,56 +2872,83 @@ body.front .sponsor-bronze div.tab-button {
     line-height: 120%;
   }
 
-  /* line 227, ../sass/_mobile.scss */
+  /* line 231, ../sass/_mobile.scss */
   .panels-flexible-row-2-main-row .keynote .speaker-name {
     font-size: 28px;
   }
 
-  /* line 230, ../sass/_mobile.scss */
+  /* line 234, ../sass/_mobile.scss */
   .rounded-corner .wrap-corner .r-edge {
     padding: 5px 10px;
     width: 95%;
   }
 
-  /* line 234, ../sass/_mobile.scss */
+  /* line 238, ../sass/_mobile.scss */
   .panels-flexible-row-2-main-row .keynote .user {
     float: none;
     width: 100%;
     margin: 30px 0 0;
   }
 
-  /* line 239, ../sass/_mobile.scss */
+  /* line 243, ../sass/_mobile.scss */
   .panels-flexible-row-2-main-row .keynote .user .tab-button {
     width: 100%;
   }
 
-  /* line 242, ../sass/_mobile.scss */
+  /* line 246, ../sass/_mobile.scss */
   .about-buttons .tab-button {
     width: 100%;
     float: none;
     margin: 10px 0;
   }
-  /* line 247, ../sass/_mobile.scss */
+  /* line 251, ../sass/_mobile.scss */
   .about-buttons .tab-button.center {
     margin: 10px 0;
   }
 
-  /* line 252, ../sass/_mobile.scss */
+  /* line 256, ../sass/_mobile.scss */
   .contactmin {
     padding: 40px 20px;
   }
-  /* line 255, ../sass/_mobile.scss */
+  /* line 259, ../sass/_mobile.scss */
   .contactmin p {
     line-height: 120%;
   }
-  
-  /* line 261, ../sass/_mobile.scss */
-  .sponsor_packages .sponsor-pack {
+
+  /* line 267, ../sass/_mobile.scss */
+  body.front .sponsor-pack,
+  .sponsor-pack {
+    float: none;
+    width: 94%;
+  }
+
+  /* line 271, ../sass/_mobile.scss */
+  .tab-button {
+    width: 100%;
+  }
+  /* line 274, ../sass/_mobile.scss */
+  .tab-button a {
+    width: 78%;
+  }
+
+  /* line 278, ../sass/_mobile.scss */
+  body.front .panel-flexible .sponsor .keynote .user {
+    margin: 0 0 30px 0;
+    width: 100%;
     float: none;
   }
-  /* line 265, ../sass/_mobile.scss */
-  .sponsor_packages .tab-button {
-    width: 200px;
+  /* line 283, ../sass/_mobile.scss */
+  body.front .panel-flexible .sponsor .keynote .user img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 287, ../sass/_mobile.scss */
+  body.front .panel-flexible .sponsor .keynote .user .tab-button {
+    width: 100%;
+  }
+  /* line 290, ../sass/_mobile.scss */
+  body.front .panel-flexible .sponsor .keynote .user .tab-button a {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1300px) {

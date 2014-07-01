@@ -38,7 +38,7 @@ body.front {
     text-align: left;
   }
   .landscape {
-    height: 492px;
+    height: 562px;
 
     .hills {
       width: 100%;
@@ -74,9 +74,14 @@ body.front {
           width: 100%;
         }
       }
+      .sponsor {
+        position: relative;
+        z-index: 10;
+        margin: 180px 0 0 0;
+      }
     }
     .lake {
-      height: 492px;
+      height: 562px;
     }
     .logo-link-inner {
       width: 100%;
@@ -101,8 +106,7 @@ body.front {
       float: none;
       margin: 10px 0;
     }
-  }
-  
+  }  
 }
 .clouds,
 .boats {
@@ -256,13 +260,35 @@ div.social {
     line-height: 120%;
   }
 }
+.info .sponsor {
 
-.sponsor_packages {
-	.sponsor-pack {
-		float: none;
-	}
+}
+body.front .sponsor-pack,
+.sponsor-pack {
+	float: none;
+  width: 94%;
+}
+.tab-button {
+	width: 100%;
 
-	.tab-button {
-		width: 200px;
-	}
+  a {
+    width: 78%;
+  }
+}
+body.front .panel-flexible .sponsor .keynote .user {
+  margin: 0 0 30px 0;
+  width: 100%;
+  float: none;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .tab-button {
+    width: 100%;
+
+    a {
+      width: 100%;
+    }
+  }
 }
