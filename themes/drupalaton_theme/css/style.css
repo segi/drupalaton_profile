@@ -2908,6 +2908,15 @@ body.front .sponsor-bronze div.tab-button {
   .contactmin p {
     line-height: 120%;
   }
+  
+  /* line 261, ../sass/_mobile.scss */
+  .sponsor_packages .sponsor-pack {
+    float: none;
+  }
+  /* line 265, ../sass/_mobile.scss */
+  .sponsor_packages .tab-button {
+    width: 200px;
+  }
 }
 @media only screen and (min-width: 1300px) {
   /**
