@@ -1,7 +1,9 @@
 (function ($) {
   Drupal.behaviors.drupalaton_theme = {
     attach: function (context) {   
-          
+      
+      var nav = responsiveNav("#nav");
+
       var width = $(window).width();
       
       // navigation position settings
@@ -42,7 +44,7 @@
         .animate('.cloud1', { delay: 0, duration: 1200, property: 'left', start: 0, end: 650  })
         .animate('.cloud2', { delay: 0, duration: 1200, property: 'left', start: 60, end: 650  })
         .animate('.cloud3', { delay: 0, duration: 1200, property: 'left', start: 740, end: 650  })
-        .animate('.cloud4', { delay: 0, duration: 1200, property: 'left', start: 1100, end: 650  })
+        .animate('.cloud4', { delay: 0, duration: 1200, property: 'left', start: 1050, end: 650  })
         .animate('.cloud5', { delay: 0, duration: 1200, property: 'left', start: 350, end: 650  })
         
         .animate('.cloud6', { delay: 0, duration: 1200, property: 'left', start: 750, end: 650  })
