@@ -27,7 +27,7 @@ function drupalaton_session_proposal_default_entityform_type() {
       "draft_save_text" : { "value" : "", "format" : "filtered_html" },
       "submission_rules" : [],
       "validation_rules" : [],
-      "submit_button_text" : "",
+      "submit_button_text" : "send",
       "submission_page_title" : "",
       "submission_text" : { "value" : "", "format" : "filtered_html" },
       "submission_show_submitted" : 0,
@@ -47,13 +47,18 @@ function drupalaton_session_proposal_default_entityform_type() {
       "access_rules" : [],
       "redirect_path" : "",
       "instruction_pre" : {
-        "value" : "\\u003Cp\\u003EThis will be the biggest camp yet, so we need your awesome Drupal sessions. Submit your proposal below and the camp organisers will pick those topics which benefit and excite attendees from Drupal community, from all topics of interest and skill levels. We are aiming for a balanced set of sessions to engage various parts of the community and are doing our best to give visibility to as many presenters as possible.\\u003C\\/p\\u003E\\r\\n",
+        "value" : "\\u003Cp\\u003EThis will be the biggest camp yet, so we need you! This year we leave DrupalCamp traditions behind and turn the weekend into learning and understanding more of Drupal 8, coding, theming and Drupal business by having half- and full-day long workshops and trainings. Submit your proposal below and the camp organisers will pick those topics which benefit and excite attendees from Drupal community, from all topics of interest and skill levels. We are aiming for a balanced set of sessions to engage various parts of the community and are doing our best to give visibility to as many presenters as possible.\\u003C\\/p\\u003E\\r\\n\\r\\n\\u003Cp\\u003EProposal submission deadline: midnight of July 20th 2014.\\u003C\\/p\\u003E\\r\\n",
         "format" : "filtered_html"
       }
     },
     "weight" : "0",
     "rdf_mapping" : [],
-    "paths" : []
+    "paths" : { "submit" : {
+        "source" : "eform\\/submit\\/session-proposal",
+        "alias" : "session-proposal",
+        "language" : "und"
+      }
+    }
   }');
   return $items;
 }

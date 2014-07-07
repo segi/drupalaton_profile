@@ -216,9 +216,12 @@ function drupalaton_session_proposal_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        '20 minutes' => '20 minutes',
-        '40 minutes' => '40 minutes',
         '90 minutes' => '90 minutes',
+        '2 hours' => '2 hours',
+        '3 hours' => '3 hours',
+        '4 hours' => '4 hours',
+        '5 hours' => '5 hours',
+        '6 hours' => '6 hours',
       ),
       'allowed_values_function' => '',
     ),

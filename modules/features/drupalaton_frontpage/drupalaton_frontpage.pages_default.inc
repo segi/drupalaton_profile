@@ -87,7 +87,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
           0 => 'bottom',
         ),
         'parent' => 'main',
-        'class' => 'center',
+        'class' => '',
       ),
       'bottom' => array(
         'type' => 'region',
@@ -95,7 +95,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
         'width' => 100,
         'width_type' => '%',
         'parent' => '1',
-        'class' => 'bottom',
+        'class' => '',
       ),
       2 => array(
         'type' => 'row',
@@ -112,7 +112,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
         'width' => 100,
         'width_type' => '%',
         'parent' => '2',
-        'class' => 'sponsor-region',
+        'class' => '',
       ),
     ),
   );
@@ -260,7 +260,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $display->panels['bottom'][3] = 'new-7787364b-d64c-45e0-a547-648b5ac359e8';
     $pane = new stdClass();
     $pane->pid = 'new-fa4de4a5-2129-4aab-8f3f-9eb2d968a61c';
-    $pane->panel = 'center';
+    $pane->panel = 'sponsow';
     $pane->type = 'views_panes';
     $pane->subtype = 'sessions-featured_session';
     $pane->shown = TRUE;
@@ -279,7 +279,35 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'fa4de4a5-2129-4aab-8f3f-9eb2d968a61c';
     $display->content['new-fa4de4a5-2129-4aab-8f3f-9eb2d968a61c'] = $pane;
-    $display->panels['center'][0] = 'new-fa4de4a5-2129-4aab-8f3f-9eb2d968a61c';
+    $display->panels['sponsow'][0] = 'new-fa4de4a5-2129-4aab-8f3f-9eb2d968a61c';
+    $pane = new stdClass();
+    $pane->pid = 'new-a03e6d29-a005-4ddd-b943-1d50ea195e97';
+    $pane->panel = 'sponsow';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Sprint banner',
+      'title' => 'Sprint all four days',
+      'body' => '<div class="tab-button" style="float: right;"><a href="/sprint" style="padding-left: 2em; padding-right: 2em;">More information</a></div>',
+      'format' => 'full_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'container_12',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'a03e6d29-a005-4ddd-b943-1d50ea195e97';
+    $display->content['new-a03e6d29-a005-4ddd-b943-1d50ea195e97'] = $pane;
+    $display->panels['sponsow'][1] = 'new-a03e6d29-a005-4ddd-b943-1d50ea195e97';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

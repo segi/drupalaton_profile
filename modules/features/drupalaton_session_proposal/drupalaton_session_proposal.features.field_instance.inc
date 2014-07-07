@@ -266,7 +266,7 @@ function drupalaton_session_proposal_field_default_field_instances() {
     'bundle' => 'session_proposal',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '20 and 40 minutes choices are for presentations. The 90 minutes choice is for workshops, which means coworking with guidance of the presenter(s) - every stakeholder will work on his/her computer just like at trainings.',
+    'description' => 'Workshops are 3 hours long, trainings are 6 hours with a lunchbreak. This means coworking with the guidance of the presenter(s) - every stakeholder will work on their own computer.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -560,7 +560,6 @@ function drupalaton_session_proposal_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('20 and 40 minutes choices are for presentations. The 90 minutes choice is for workshops, which means coworking with guidance of the presenter(s) - every stakeholder will work on his/her computer just like at trainings.');
   t('Co-presenters (optional)');
   t('Drupal.org profile (optional)');
   t('Employer name');
@@ -580,6 +579,7 @@ function drupalaton_session_proposal_field_default_field_instances() {
   t('Track / Topic');
   t('Twitter (optional)');
   t('What is the experience level of your target audience?');
+  t('Workshops are 3 hours long, trainings are 6 hours with a lunchbreak. This means coworking with the guidance of the presenter(s) - every stakeholder will work on their own computer.');
   t('Your email address');
   t('Your full name');
   t('Your phone number');
