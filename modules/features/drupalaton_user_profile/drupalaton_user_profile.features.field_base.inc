@@ -116,8 +116,8 @@ function drupalaton_user_profile_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'female' => 'Female',
-        'male' => 'Male',
+        'Female' => 'Female',
+        'Male' => 'Male',
       ),
       'allowed_values_function' => '',
     ),
