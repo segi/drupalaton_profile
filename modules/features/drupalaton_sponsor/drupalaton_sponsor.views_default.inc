@@ -39,6 +39,10 @@ function drupalaton_sponsor_views_default_views() {
   );
   $handler->display->display_options['style_options']['row_class'] = 'sor';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Content: Category (field_sponsor_tax_category) */
+  $handler->display->display_options['relationships']['field_sponsor_tax_category_tid']['id'] = 'field_sponsor_tax_category_tid';
+  $handler->display->display_options['relationships']['field_sponsor_tax_category_tid']['table'] = 'field_data_field_sponsor_tax_category';
+  $handler->display->display_options['relationships']['field_sponsor_tax_category_tid']['field'] = 'field_sponsor_tax_category_tid';
   /* Field: Content: Logo */
   $handler->display->display_options['fields']['field_sponsor_logo']['id'] = 'field_sponsor_logo';
   $handler->display->display_options['fields']['field_sponsor_logo']['table'] = 'field_data_field_sponsor_logo';
@@ -57,10 +61,18 @@ function drupalaton_sponsor_views_default_views() {
   $handler->display->display_options['fields']['field_sponsor_category']['label'] = '';
   $handler->display->display_options['fields']['field_sponsor_category']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_sponsor_category']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Category (field_sponsor_category) */
-  $handler->display->display_options['sorts']['field_sponsor_category_value']['id'] = 'field_sponsor_category_value';
-  $handler->display->display_options['sorts']['field_sponsor_category_value']['table'] = 'field_data_field_sponsor_category';
-  $handler->display->display_options['sorts']['field_sponsor_category_value']['field'] = 'field_sponsor_category_value';
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_sponsor_tax_category']['id'] = 'field_sponsor_tax_category';
+  $handler->display->display_options['fields']['field_sponsor_tax_category']['table'] = 'field_data_field_sponsor_tax_category';
+  $handler->display->display_options['fields']['field_sponsor_tax_category']['field'] = 'field_sponsor_tax_category';
+  $handler->display->display_options['fields']['field_sponsor_tax_category']['label'] = '';
+  $handler->display->display_options['fields']['field_sponsor_tax_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_sponsor_tax_category']['element_label_colon'] = FALSE;
+  /* Sort criterion: Taxonomy term: Weight */
+  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['relationship'] = 'field_sponsor_tax_category_tid';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -135,13 +147,17 @@ function drupalaton_sponsor_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'sponsor' => 'sponsor',
   );
-  /* Filter criterion: Content: Category (field_sponsor_category) */
-  $handler->display->display_options['filters']['field_sponsor_category_value']['id'] = 'field_sponsor_category_value';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['table'] = 'field_data_field_sponsor_category';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['field'] = 'field_sponsor_category_value';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['value'] = array(
-    'diamond' => 'diamond',
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Category (field_sponsor_tax_category) */
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['id'] = 'field_sponsor_tax_category_tid';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['table'] = 'field_data_field_sponsor_tax_category';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['field'] = 'field_sponsor_tax_category_tid';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['value'] = array(
+    1 => '1',
   );
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['vocabulary'] = 'sponsors';
 
   /* Display: Gold */
   $handler = $view->new_display('block', 'Gold', 'block_2');
@@ -161,13 +177,17 @@ function drupalaton_sponsor_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'sponsor' => 'sponsor',
   );
-  /* Filter criterion: Content: Category (field_sponsor_category) */
-  $handler->display->display_options['filters']['field_sponsor_category_value']['id'] = 'field_sponsor_category_value';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['table'] = 'field_data_field_sponsor_category';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['field'] = 'field_sponsor_category_value';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['value'] = array(
-    'gold' => 'gold',
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Category (field_sponsor_tax_category) */
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['id'] = 'field_sponsor_tax_category_tid';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['table'] = 'field_data_field_sponsor_tax_category';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['field'] = 'field_sponsor_tax_category_tid';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['value'] = array(
+    2 => '2',
   );
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['vocabulary'] = 'sponsors';
 
   /* Display: Diamond in header */
   $handler = $view->new_display('block', 'Diamond in header', 'sponsor_diamond_header');
@@ -213,18 +233,23 @@ function drupalaton_sponsor_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'sponsor' => 'sponsor',
   );
-  /* Filter criterion: Content: Category (field_sponsor_category) */
-  $handler->display->display_options['filters']['field_sponsor_category_value']['id'] = 'field_sponsor_category_value';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['table'] = 'field_data_field_sponsor_category';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['field'] = 'field_sponsor_category_value';
-  $handler->display->display_options['filters']['field_sponsor_category_value']['value'] = array(
-    'diamond' => 'diamond',
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Category (field_sponsor_tax_category) */
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['id'] = 'field_sponsor_tax_category_tid';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['table'] = 'field_data_field_sponsor_tax_category';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['field'] = 'field_sponsor_tax_category_tid';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['value'] = array(
+    1 => '1',
   );
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_sponsor_tax_category_tid']['vocabulary'] = 'sponsors';
   /* Filter criterion: Content: Big logo (field_sponsor_big_logo:fid) */
   $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['id'] = 'field_sponsor_big_logo_fid';
   $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['table'] = 'field_data_field_sponsor_big_logo';
   $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['field'] = 'field_sponsor_big_logo_fid';
   $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['operator'] = '!=';
+  $handler->display->display_options['filters']['field_sponsor_big_logo_fid']['group'] = 1;
   $export['sponsors'] = $view;
 
   return $export;
