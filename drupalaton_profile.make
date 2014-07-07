@@ -66,6 +66,8 @@ projects[link][version] = 1.2
 projects[link][subdir] = contrib
 projects[field_group][version] = 1.4
 projects[field_group][subdir] = contrib
+projects[feeds][version] = 2.0-alpha8
+projects[feeds][subdir] = contrib
 
 ; User interface
 projects[ckeditor][type] = "module"
