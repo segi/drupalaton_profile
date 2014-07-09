@@ -91,3 +91,9 @@ libraries[ckeditor][type] = "libraries"
 libraries[respond][download][type] = "get"
 libraries[respond][download][url] = "https://github.com/scottjehl/Respond/archive/master.zip"
 libraries[respond][destination] = "../../profiles/drupalaton_profile/themes/drupalaton_theme/lib"
+
+projects[sass_bootstrap][type] = library
+projects[sass_bootstrap][download][type] = git
+projects[sass_bootstrap][download][url] = https://github.com/twbs/bootstrap-sass
+projects[sass_bootstrap][download][revision] = 0d25afc31914c4d31a3129b1b1bc3d8fc254824b
+projects[sass_bootstrap][destination] = "../../profiles/drupalaton_profile/themes/drupalaton_theme/lib"
