@@ -5,6 +5,7 @@ html {
   font-family: $base-font-family;
   line-height: 160%;
   font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
 }
 
 .node {
@@ -42,6 +43,7 @@ h1.title {
   line-height: 100%;
   text-transform: uppercase;
   color: $sectiontitle;   
+  font-weight: 700;
 }
 h1#page-title {
   margin-top: 50px;
@@ -396,6 +398,7 @@ body.not-front {
     line-height: 100%;
     text-transform: uppercase;
     color: $sectiontitle;
+    font-weight: 700;
   }
   h3 {
     margin: 40px 0 0 0;
@@ -1025,6 +1028,7 @@ img.img-right {
     @include drupalaton-sprite-background();
     @include drupalaton-sprite(200px, 200px, 0 0);
     text-align: center;
+    background-color: transparent;
     margin: 0 auto 20px auto;
   }
   * {
@@ -1112,7 +1116,7 @@ img.img-right {
 }
 .pack-status {
   color: #fff;
-  margin: 24px 0 0 0;
+  margin: 22px 0 0 0;
   font-size: 18px;
   font-weight: 500;
 }

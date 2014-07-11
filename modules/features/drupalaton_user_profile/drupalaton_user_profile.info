@@ -36,6 +36,7 @@ features[field_instance][] = user-user-field_profile_last_name
 features[field_instance][] = user-user-field_profile_organization
 features[field_instance][] = user-user-field_profile_picture
 features[field_instance][] = user-user-field_profile_tshirt
+features[image][] = attendees
 features[user_role][] = attendees
 features[user_role][] = individual sponsor
 features[user_role][] = speaker

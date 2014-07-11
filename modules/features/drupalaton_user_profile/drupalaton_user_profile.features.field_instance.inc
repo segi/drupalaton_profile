@@ -292,7 +292,7 @@ function drupalaton_user_profile_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'attendees',
         ),
         'type' => 'image',
         'weight' => 0,

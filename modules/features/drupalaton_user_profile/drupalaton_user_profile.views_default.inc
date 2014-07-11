@@ -31,8 +31,8 @@ function drupalaton_user_profile_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '36';
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['columns'] = '6';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = '.col-xs-12 .col-sm-6 .col-md-3 .col-lg-3';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
     'field_profile_first_name' => 'field_profile_first_name',
@@ -54,31 +54,32 @@ function drupalaton_user_profile_views_default_views() {
   $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => 'content',
+    'image_style' => 'attendees',
+    'image_link' => '',
   );
   /* Field: User: First name */
   $handler->display->display_options['fields']['field_profile_first_name']['id'] = 'field_profile_first_name';
   $handler->display->display_options['fields']['field_profile_first_name']['table'] = 'field_data_field_profile_first_name';
   $handler->display->display_options['fields']['field_profile_first_name']['field'] = 'field_profile_first_name';
   $handler->display->display_options['fields']['field_profile_first_name']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_first_name']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_profile_first_name']['alter']['path'] = 'user/[uid]';
   $handler->display->display_options['fields']['field_profile_first_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_first_name']['hide_empty'] = TRUE;
   /* Field: User: Last name */
   $handler->display->display_options['fields']['field_profile_last_name']['id'] = 'field_profile_last_name';
   $handler->display->display_options['fields']['field_profile_last_name']['table'] = 'field_data_field_profile_last_name';
   $handler->display->display_options['fields']['field_profile_last_name']['field'] = 'field_profile_last_name';
   $handler->display->display_options['fields']['field_profile_last_name']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_last_name']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_profile_last_name']['alter']['path'] = 'user/[uid]';
   $handler->display->display_options['fields']['field_profile_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_last_name']['hide_empty'] = TRUE;
   /* Field: User: Organization */
   $handler->display->display_options['fields']['field_profile_organization']['id'] = 'field_profile_organization';
   $handler->display->display_options['fields']['field_profile_organization']['table'] = 'field_data_field_profile_organization';
   $handler->display->display_options['fields']['field_profile_organization']['field'] = 'field_profile_organization';
   $handler->display->display_options['fields']['field_profile_organization']['label'] = '';
   $handler->display->display_options['fields']['field_profile_organization']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_organization']['hide_empty'] = TRUE;
   /* Sort criterion: User: First name (field_profile_first_name) */
   $handler->display->display_options['sorts']['field_profile_first_name_value']['id'] = 'field_profile_first_name_value';
   $handler->display->display_options['sorts']['field_profile_first_name_value']['table'] = 'field_data_field_profile_first_name';
