@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 .view-attendees {
 	margin: 25px 0 0 0;
 	
@@ -15,6 +17,10 @@
 		margin: 0;
 		padding: 0;
 		position: relative;
+
+		&:hover .text{
+			opacity: 0;
+		}
 	}
 	.text {
 		background-color: rgba(8, 38, 55, .5);
@@ -22,6 +28,7 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
+		@include transition(all ease .4s);
 
 		* {
 			line-height: 100%;
