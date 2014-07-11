@@ -121,8 +121,7 @@ function drupalaton_sponsor_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
-  $handler->display->display_options['path'] = 'sponsors';
-  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['path'] = 'sponsors-old';
   $handler->display->display_options['menu']['title'] = 'Sponsors';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
