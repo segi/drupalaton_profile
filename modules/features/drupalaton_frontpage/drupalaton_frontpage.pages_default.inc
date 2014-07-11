@@ -290,7 +290,8 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Sprint banner',
       'title' => 'Sprint all four days',
-      'body' => '<div class="tab-button" style="float: right;"><a href="/sprint" style="padding-left: 2em; padding-right: 2em;">More information</a></div>',
+      'body' => '<div class="tab-button" style="float: right;"><a href="/sprint" style="padding-left: 2em; padding-right: 2em; margin-top: 0.4em;">More information</a></div>
+<style>.pane-sprint-button h2 { float: left; }</style>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -300,7 +301,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'container_12',
+      'css_class' => 'container_12 pane-sprint-button',
     );
     $pane->extras = array();
     $pane->position = 1;
