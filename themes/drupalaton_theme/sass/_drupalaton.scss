@@ -802,6 +802,13 @@ table {
         padding: 10px;
         display: table-cell;
       }
+      &.room1 {
+         width: 27%;
+      }
+      &.room2 {
+        width: 38%;
+      }
+
     }
   }
   tbody {
@@ -835,12 +842,6 @@ table {
         }
         &.time.hide {
           color: #fff;
-        }
-        &.room1 {
-          width: 27%;
-        }
-        &.room2 {
-          width: 38%;
         }
       }
             
