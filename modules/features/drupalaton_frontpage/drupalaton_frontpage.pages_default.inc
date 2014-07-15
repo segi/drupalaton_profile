@@ -228,6 +228,34 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $display->content['new-43948b8c-2486-4f3a-9a4f-d23878fdabae'] = $pane;
     $display->panels['bottom'][2] = 'new-43948b8c-2486-4f3a-9a4f-d23878fdabae';
     $pane = new stdClass();
+    $pane->pid = 'new-e7753706-bb83-479d-921d-691af611cac6';
+    $pane->panel = 'bottom';
+    $pane->type = 'node';
+    $pane->subtype = 'node';
+    $pane->shown = FALSE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'nid' => '14',
+      'links' => 0,
+      'leave_node_title' => 0,
+      'identifier' => '',
+      'build_mode' => 'teaser',
+      'link_node_title' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = 'e7753706-bb83-479d-921d-691af611cac6';
+    $display->content['new-e7753706-bb83-479d-921d-691af611cac6'] = $pane;
+    $display->panels['bottom'][3] = 'new-e7753706-bb83-479d-921d-691af611cac6';
+    $pane = new stdClass();
     $pane->pid = 'new-7787364b-d64c-45e0-a547-648b5ac359e8';
     $pane->panel = 'bottom';
     $pane->type = 'node';
@@ -253,11 +281,11 @@ function drupalaton_frontpage_default_page_manager_pages() {
       'css_class' => 'container_12',
     );
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = '7787364b-d64c-45e0-a547-648b5ac359e8';
     $display->content['new-7787364b-d64c-45e0-a547-648b5ac359e8'] = $pane;
-    $display->panels['bottom'][3] = 'new-7787364b-d64c-45e0-a547-648b5ac359e8';
+    $display->panels['bottom'][4] = 'new-7787364b-d64c-45e0-a547-648b5ac359e8';
     $pane = new stdClass();
     $pane->pid = 'new-fa4de4a5-2129-4aab-8f3f-9eb2d968a61c';
     $pane->panel = 'sponsow';
@@ -290,7 +318,8 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Sprint banner',
       'title' => 'Sprint all four days',
-      'body' => '<div class="tab-button" style="float: right;"><a href="/sprint" style="padding-left: 2em; padding-right: 2em;">More information</a></div>',
+      'body' => '<div class="tab-button" style="float: right;"><a href="/sprint" style="padding-left: 2em; padding-right: 2em; margin-top: 0.4em;">More information</a></div>
+<style>.pane-sprint-button h2 { float: left; }</style>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -300,7 +329,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'container_12',
+      'css_class' => 'container_12 pane-sprint-button',
     );
     $pane->extras = array();
     $pane->position = 1;

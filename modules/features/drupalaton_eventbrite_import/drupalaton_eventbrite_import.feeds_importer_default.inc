@@ -40,10 +40,10 @@ function drupalaton_eventbrite_import_feeds_importer_default() {
       'config' => array(
         'roles' => array(
           5 => '5',
+          6 => '6',
           3 => 0,
           4 => 0,
           7 => 0,
-          6 => 0,
         ),
         'status' => '1',
         'defuse_mail' => 0,
