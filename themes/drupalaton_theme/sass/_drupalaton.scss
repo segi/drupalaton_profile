@@ -898,6 +898,16 @@ body.front .panel-flexible .panel-separator {
       margin: 3em 0;
     }
   }
+  .views-field-body ul {
+    padding: 0 0 0 40px;
+
+    li {
+      margin: 10px 0;
+      list-style: initial;
+      list-style-position: inside {
+      }
+    }
+  }
   p {
     line-height: 140%;
   }
