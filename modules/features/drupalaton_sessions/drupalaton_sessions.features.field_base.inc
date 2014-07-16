@@ -27,8 +27,8 @@ function drupalaton_sessions_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'Session A' => 'Session A',
-        'Session B' => 'Session B',
+        'Cheppers I' => 'Cheppers I.',
+        'Cheppers II' => 'Cheppers II.',
       ),
       'allowed_values_function' => '',
     ),
@@ -170,10 +170,9 @@ function drupalaton_sessions_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'Workshop (3 hours)' => 'Workshop (3 hours)',
         'Workshop (90 minutes)' => 'Workshop (90 minutes)',
-        'Session (40 minutes)' => 'Session (40 minutes)',
-        'Session (20 minutes)' => 'Session (20 minutes)',
+        'Workshop (2 hours)' => 'Workshop (2 hours)',
+        'Workshop (3 hours)' => 'Workshop (3 hours)',
         'Training' => 'Training',
       ),
       'allowed_values_function' => '',

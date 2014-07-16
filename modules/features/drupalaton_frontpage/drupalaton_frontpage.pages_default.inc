@@ -232,7 +232,7 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $pane->panel = 'bottom';
     $pane->type = 'node';
     $pane->subtype = 'node';
-    $pane->shown = FALSE;
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'nid' => '14',
@@ -248,7 +248,10 @@ function drupalaton_frontpage_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'container_12',
+    );
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
