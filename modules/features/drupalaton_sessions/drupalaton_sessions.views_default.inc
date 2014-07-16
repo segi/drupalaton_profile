@@ -153,18 +153,24 @@ function drupalaton_sessions_views_default_views() {
   $handler->display->display_options['fields']['field_session_speaker_image']['table'] = 'field_data_field_session_speaker_image';
   $handler->display->display_options['fields']['field_session_speaker_image']['field'] = 'field_session_speaker_image';
   $handler->display->display_options['fields']['field_session_speaker_image']['label'] = '';
+  $handler->display->display_options['fields']['field_session_speaker_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_session_speaker_image']['alter']['path'] = 'schedule#speaker-[nid]';
   $handler->display->display_options['fields']['field_session_speaker_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_session_speaker_image']['element_wrapper_class'] = 'image';
   $handler->display->display_options['fields']['field_session_speaker_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_session_speaker_image']['settings'] = array(
     'image_style' => '',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['alter']['text'] = '<a href="/schedule#speaker-[nid]">View details</a>';
+  $handler->display->display_options['fields']['view_node']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['alter']['link_class'] = 'hide';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'about-speaker tab-button';
   $handler->display->display_options['fields']['view_node']['text'] = 'View details';
