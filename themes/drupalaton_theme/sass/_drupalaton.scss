@@ -389,7 +389,8 @@ body.not-front {
     margin-bottom: 10px;
   }
 }
-.field-name-field-session-type .field-items {
+.field-name-field-session-type .field-items,
+.field-name-field-session-room .field-items {
   margin: 25px 0 10px 0;
 }
 .panel-pane  {
@@ -458,7 +459,7 @@ body.page-sponsors{
       border-bottom: 0;
     }
   }
-  .global .views-row {
+  .pane-sponsors .views-row {
     border-bottom: 1px solid $tabletd;
     margin: 15px 0;
     padding-bottom: 20px;
