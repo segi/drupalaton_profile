@@ -18,7 +18,7 @@ function drupalaton_ckeditor_ckeditor_profile_defaults() {
         'uicolor' => 'default',
         'uicolor_user' => 'default',
         'toolbar' => '[
-    [\'Styles\',\'Bold\',\'Italic\',\'Underline\'],
+    [\'Styles\',\'Bold\',\'Italic\',\'Underline\',\'Strike\'],
     [\'NumberedList\',\'BulletedList\'],
     [\'JustifyCenter\',\'JustifyLeft\',\'JustifyRight\'],
     [\'PasteFromWord\',\'Link\',\'Unlink\',\'Image\',\'DrupalBreak\']
